@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+
+\title{PS1}
+\author{Rafael Alfena Zago }
+\date{January 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 5}
+I am a PhD student in Economics, in the second semester of the third year. 
+I am interested specially in the Development field an also starting to work with some themes related to Labor. 
+For the first field, I am currently working on a paper that is investigating the effects of better public lighting on crimes. 
+For the second one, I want to see the effects of Venezuelans migration into Roraima State in Brazil on native wages. \\~\\
+So, my biggest plan for this class is to increase my skill set on programming, one of the most important skills for economist nowadays (in my opinion). 
+It was really hard to learn ``stata" on my own when I started the program, so I know the value of someone teaching you this kind of programming. 
+I still do not know what I will do for this class as a final project. 
+I am still familiarizing myself with all this new language and I still have some things to catch up, but I'm sure I will figure it out pretty soon. \\~\\
+My plan after graduation is being a professor and a researcher in some university in the U.S. 
+I have always been interested in being a professor and in writing. 
+Thus the PhD program combined these two wishes and presented me what I want to do in the future. 
+
+
+\section{Equation}
+$$a^2+b^2=c^2$$
+
+\end{document}
