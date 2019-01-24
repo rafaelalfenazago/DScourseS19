@@ -1,0 +1,44 @@
+\documentclass[11pt]{article}
+
+\usepackage[super]{nth}
+
+\title{PS2}
+\author{Rafael Alfena Zago }
+\date{January \nth{29} 2019}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 3}
+
+\begin{enumerate}
+\item Measurement
+\item Statistical Programming Languages
+\begin{enumerate}
+    \item Compiled Languages
+    \item Scripted Languages
+\end{enumerate}
+\item Web Scraping
+\begin{enumerate}
+    \item APIs
+    \item Parsing
+\end{enumerate}
+\item Handling Large Data Sets
+\begin{enumerate}
+    \item RDDs
+    \item SQL
+\end{enumerate}
+Vizualization
+\begin{enumerate}
+    \item ggplot (R)
+    \item matplotlib (Python)
+    \item Plots.jl (Julia)
+    \item Tableau
+\end{enumerate}
+\item Modeling
+
+\end{document}
