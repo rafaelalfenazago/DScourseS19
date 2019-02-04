@@ -1,0 +1,26 @@
+\documentclass[11pt]{article}
+\usepackage[super]{nth}
+
+\title{PS3}
+\author{Rafael Alfena Zago }
+\date{February \nth{5} 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 6}
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+        \item 5Mb;
+        \item Zero;
+        \item 36634;
+    \end{enumerate}
+\end{enumerate}
+
+
+
+
+\end{enumerate}
+\end{document}
