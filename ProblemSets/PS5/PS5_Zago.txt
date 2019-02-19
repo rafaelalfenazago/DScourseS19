@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS5}
+\author{Rafael Alfena Zago }
+\date{February 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 3}
+
+I am currently working with a project about Venezuela and I used these facts in a presentation last year to show what the country is going through over the last years. Although the website shows a relatively easy format too look into them, having a table makes it way easier to interpret and locate facts and years. Besides it is a lot more convenient way to store the data, instead of having to keep going back to the website. \\~\\
+In order to do this part, I had to take as an example a file made by one of my colleagues. It was difficult for me having only one example of how to web-scrape, specially because the one made in class was way easier and better organized than the ones I encountered online. So, I needed another point of view to start understanding how things really work in the page source.  
+
+\section{Question 4}
+
+I found that the younger female population in Boulder county, CO tend to increase over the years. For the older females, the projected population decreased in early 2000's and then predicted an increase later on, with a greater increase rate from 2020 on. It was interesting to see how the female population tend to increase even with world predictions of reductions in population and also that biggest part of this increase is due to young women.This may be specially because of the University of Colorado in the city, that mus attract young people and among them, women. \\~\\
+I used the following packages: 
+\begin{itemize}
+    \item library(ggmap);
+\item library(ggplot2);
+\item library(dplyr);
+\item library(rjson);
+\item library(jsonlite);
+\item library(RCurl).
+
+\end{itemize}
+
+\end{document}
