@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\title{PS6}
+\author{Rafael Alfena Zago}
+\date{March 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 3}
+
+I did not have to do much to actually clean the data, but separate the date variable into two variables: one for month and the other for year. The process was a little complicated:
+\begin{itemize}
+\item I had first to change the name of the variable to "date1" since the original name was not as straightforward when the data was imported to R;
+    \item Then, I actually separated the month and the year, creating two new variables in a new data frame;
+    \item After that, I created three different data frames according to what I wanted to graph.
+\end{itemize}
+
+\section{Question 5}
+
+Figure~\ref{figure1} depicts the number of Venezuelans searching for refugee status in Brazil, from 2007 to 2018, by state. Clearly, "RR"and "AM", respectively Roraima and Amazonas, are the states the received the majority of Venezuelans over the years. Meanwhile, in figure~\ref{figure2}, we can see that, over the years the seek for refugee status increased a lot, which is a reflection of the Venezuelan crises that was intensified in 2015. Finally, in figure~\ref{figure3}, we can see that the increase in the number of venezuelans in Brazil is driven specially by the ones going to "Roraima", as suggested by figure~\ref{figure1}. Thus, the three pictures help us to understand that in fact Brazil is one of the main destinations of Venezuelans leaving their country. However, it is not a dispersed diaspora, but really concentrated in Roraima (with a considerable part also going to Amazonas). 
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{PS6a_Zago.png}
+\caption{Venezuelans Refugee Status Seekers by State in Brazil, 2007-2018}
+\label{figure1}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{PS6b_Zago.png}
+\caption{Venezuelans Refugee Status Seekers by year in Brazil, 2007-2018}
+\label{figure2}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{PS6c_Zago.png}
+\caption{Venezuelans Refugee Status Seekers by year in Roraima, 2007-2018}
+\label{figure3}
+\end{figure}
+
+
+\end{document}
