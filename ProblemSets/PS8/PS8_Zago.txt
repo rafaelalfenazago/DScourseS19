@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{dcolumn}
+\usepackage{adjustbox}
+\usepackage{threeparttable}
+\usepackage{graphicx}
+
+\title{PS8}
+\author{Rafael Zago }
+\date{March 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 9}
+
+
+\begin{table}[!htbp] \centering 
+\resizebox{.7\textwidth}{!}{\begin{minipage}{\textwidth}
+  \begin{adjustbox}{} 
+  \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+  \caption{Results for Linear Model} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & y \\ 
+\hline \\[-1.8ex] 
+ X1 & 1.501$^{***}$ \\ 
+  & (0.002) \\ 
+  & \\ 
+ X2 & $-$0.991$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X3 & $-$0.247$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X4 & 0.744$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X5 & 3.504$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X6 & $-$1.999$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X7 & 0.502$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X8 & 0.997$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X9 & 1.256$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ X10 & 1.999$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 100,000 \\ 
+R$^{2}$ & 0.971 \\ 
+Adjusted R$^{2}$ & 0.971 \\ 
+Residual Std. Error & 0.500 (df = 99990) \\ 
+F Statistic & 338,240.000$^{***}$ (df = 10; 99990) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively. 
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\end{minipage} }
+\label{table1}
+\end{table} 
+
+
+Table \ref{table1} shows the results for the linear model, while figure \ref{figure1} depicts the results for all the estimations. They are all really similar and, ultimately, they reach the same value if we set a large number of simulations.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{Different_estimations.png}
+\caption{Results for Different Estimations}
+\label{figure1}
+\end{figure}
+
+
+
+\end{document}
