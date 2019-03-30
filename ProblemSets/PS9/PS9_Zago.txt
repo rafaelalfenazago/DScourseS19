@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[export]{adjustbox}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[super]{nth}
+\usepackage{natbib}
+\usepackage{threeparttable}
+\usepackage{url}
+\usepackage{indentfirst}
+\usepackage{setspace}
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1em}
+\onehalfspacing
+
+
+\title{PS9 Zago}
+\author{Rafael Alfena Zago}
+\date{April 2019}
+
+\begin{document}
+
+\maketitle
+
+\makeatletter
+\def\@seccntformat#1{%
+  \expandafter\ifx\csname c@#1\endcsname\c@section\else
+  \csname the#1\endcsname\quad
+  \fi}
+\makeatother
+
+\section{Question 6 - Lasso}
+
+$\alpha= 1$, $\hat{\lambda} = 0.00958$, in-sample RMSE = 0.1590944, out-of-sample RMSE = 0.1862298.
+
+\section{Question 7 - Ridge}
+
+$\alpha= 0$, $\hat{\lambda} = 0.108$, in-sample RMSE = 0.1581990, out-of-sample RMSE = 0.1837894.
+
+\section{Question 8 - Elastic Net}
+
+$\hat{\lambda} = 0.114$, $\hat{\alpha} = 0.0295$, in-sample RMSE = 0.1618053, out-of-sample RMSE = 0.1826963.\par 
+
+The optimal value of $\alpha$ lead us to think that the Ridge method is the best strategy for optimization for ts task. 
+
+\section{Question 9}
+
+\begin{enumerate}
+    \item Because there is no regularization in OLS.
+    \item The in-sample RMSE vale of the Ridge model is the lowest among the three. Thus, by having the lowest variance, we can say that it finds a better  way (among those estimated) not to overfit the model and have a good prediction power, as we can see for the out-of-sample RMSE, that is similar across every specification. Therefore, the Ridge one presents the best balance in the trade-off of variance-bias.
+\end{enumerate}
+
+
+\end{document}
