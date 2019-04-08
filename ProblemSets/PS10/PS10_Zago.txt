@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[export]{adjustbox}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[super]{nth}
+\usepackage{natbib}
+\usepackage{threeparttable}
+\usepackage{url}
+\usepackage{indentfirst}
+\usepackage{setspace}
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1em}
+\onehalfspacing
+
+\title{PS10 Zago}
+\author{Rafael Zago }
+\date{April 2019}
+
+\begin{document}
+
+\maketitle
+
+
+
+\section{F1 Score and G-Measure}
+
+\begin{tabular}{c|cccccc}
+\hline\hline
+ & Tree & Logit & Neural Network & KNN & SVM & Naive Bayes\\ \hline
+$f1$ & 1.0000000 & 1.0000000 & 1.0000000 & 0.9991913 & 0.9999242 & 0.9913029\\ \hline 
+$gmean$ & 1.0000000 & 1.0000000 & 1.0000000 & 0.9976650 & 0.9997600 & 0.9913405\\ \hline 
+\end{tabular}
+
+\section{Parameters}
+\subsection{Tree Model}
+\begin{tabular}{c|cccccc}
+\hline\hline
+ Parameters & Values\\\hline
+ minsplit & 16\\\hline
+ minbucket & 37\\\hline
+ cp & 0.193
+\end{tabular}
+
+
+\subsection{Logit Model}
+\begin{tabular}{c|cccccc}
+\hline\hline
+ Parameters & Values\\\hline
+$\lambda$ & 0.0263\\\hline
+$\alpha$ & 0.786\\\hline
+\end{tabular}
+
+\subsection{Neural Network}
+\begin{tabular}{c|cccccc}
+\hline\hline
+ Parameters & Values\\\hline
+ size & 9\\\hline
+decay & 0.357\\\hline
+maxit & 1000\\\hline
+\end{tabular}
+
+
+\subsection{KNN}
+\begin{tabular}{c|cccccc}
+\hline\hline
+ Parameters & Values\\\hline
+ k & 12\\\hline
+\end{tabular}
+
+\subsection{SVM}
+\begin{tabular}{c|cccccc}
+\hline\hline
+ Parameters & Values\\\hline
+kernel & radial\\\hline
+ cost & 1\\\hline
+$\gamma$ & 0.25\\\hline
+\end{tabular}
+
+
+
+
+\end{document}
