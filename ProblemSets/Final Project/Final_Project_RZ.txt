@@ -1,0 +1,1476 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[export]{adjustbox}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[super]{nth}
+\usepackage{natbib}
+\usepackage{threeparttable}
+\usepackage{url}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{csquotes}
+\usepackage[]{natbib}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tabularx}
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1em}
+\onehalfspacing
+
+
+\title{The Effects of Massive Venezuelan Immigration on the Labor Market in Roraima State, Brazil. }
+\date{2019}
+\author{Rafael Alfena Zago\\ Universtity of Oklahoma}  
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+\it This paper studies the effects of the massive wave of migration of Venezuelans to Roraima State, in Brazil, that was intensified in 2016 on local labor market outcomes. The Venezuelan crisis makes this phenomenon to be considered as a natural experiment. In 2018, the Venezuelan migrants increased the state's population by at least 8.14\%. Due to the intensification of the competition for low and middle skilled jobs, estimates indicate that a 1\% increase in the population as a result of the entry of Venezuelans made workers in Roraima to earn a lower effective wage monthly both in the main job and in all jobs. However, the results are not homogeneous across sectors of the economy. Construction and Industry workers seem to be the two sectors that are experiencing a higher decrease in effective monthly wages in the main job. As an indirect effect, estimates also suggest that the massive migration pushed workers with college degree to work more hours weekly in all jobs.
+
+\end{abstract}
+
+\section{Introduction} 
+
+Immigration has been a main point of discussion and study in the XXI century. The wars and misgovernment actions around the world has generated millions of refugees that are forced to leave their home countries and seek to start over in some other nation. According to an article published in Independent \citep{displaced_people}, daily, 44,500 refugees seek for asylum and the total of people looking to settle in some other country already reached 68.5 million. The phenomenon is mostly felt and studied in Europe and in the United States. This is because most of the refugees look for developed countries as their destination, given that, theoretically, they can provide better job and life opportunities. However, this is not the only direction that guides refugees. Some of them do not have a choice of where to go. They have constrained resources to organize themselves and think about their future. Thus, they end up migrating to places nearby. That is the case of this study. \par
+This paper adds on the current literature on immigration in two main perspectives. First by being the first work done on studying the effects of immigration on a developing country as a result of a flow of people departing also from a developing country. As the best of my knowledge, this is the first study that addresses this question, one of the main ones in the labor economics field, not only for developing countries, but more specifically in South America. Secondly, the sequence of events that pushed people to migrate from Venezuela to Brazil allow us to think this phenomenon as a natural experiment, what mitigates one of the biggest concerns in the literature with immigrants endogeneity . Because of that, I provide a clear estimation strategy that produces parameters easy to be interpreted as elasticities. Besides, I also address the remaining concerns with endogeneity and non-randomness problems by adding two comparisons groups in order to confirm the findings. \par
+From 2016 to 2016, 62,797 requested a refugee status in the state of Roraima, in the North of Brazil\footnote{This is only lower bound of the exact amount of people who entered the country through the state. This number reached at least 199,365 only in 2017 and 2018 according to "Ministério da Casa Civil", but not all of the migrants remained in the country and part of them entered the country by other ways that impedes an exact measure.}. This massive flow of Venezuelans to Brazil is a consequence of a deep political and economic crises created in Venezuela as a result specially of several acts of misgovernment from the acting president Nicolás Maduro. The result of this intense movement of people was a 8.14\% increase in the population of Roraima, only in 2018. This  paper  summarizes  the  effects  of the  migration of Venezuelans to Roraima  on  the  local labor market outcomes, focusing  on  effective monthly wages and normal weekly hours worked both in the main and in all jobs.  The  analysis is  based  on  individual  micro-data  for 2010-2018  from  the sample  of the Pesquisa Nacional por Amostra de Domicílios (PNAD) by trimester. \par 
+I find that a 1\% increase in the population of the state caused by the massive migration of Venezuelans decreased effective monthly wages by 1.4\%. On the other hand, normal weekly hours worked seem to remain unaffected. However, when desegregating the effects by level of education and sectors of the economy, I find evidences of heterogeneous responses across groups, with lower skilled-jobs being the responsible of driving this decrease in effective monthly wages. Besides, estimates provide evidences that Venezuelans with a higher level of education are now competing for low-skilled jobs in the state. In the case of weekly worked hours, results indicate two trends by sector of the economy: first a reduction in sectors with low-skilled jobs; second, as an indirect effect, an increase of weekly worked hours for professionals that are in sectors related to the assistance of the migrants, such as Health, Education, Defense, among others. \par
+In summary, this research attempts to put South America in the spot in the labor literature by providing evidences of how the migration crisis, that is currently a worldwide problem, affects the local labor market of a developing country. The rest of the paper is organized as follows: section 2 introduces the literature on the matter; section 3 provides a historical background of the events in Venezuela that generated the conditions that pushed people away from their country and the reasons why they migrated to Brazil; section 4 presents the data and the estimation strategy; section 5 discusses the main results and section 6 concludes
+
+
+
+\section{Immigration and Native Wages}
+
+One of the biggest concerns of the society is that the arrival of these immigrants would result in an increase in labor supply, which could harm natives by pressuring down the wages and by worsening native work conditions. However, this relationship is not as straight forward as it seems and has been generating debates among economists since the 1990's. First, the difference in the composition of migrants (low and high skill people - even more different groups, according to education) play an important role in these studies, given they will compete for different jobs in different industries of distinct sectors in the economy of destination. Besides, it is not obvious that natives and immigrants will compete for the same jobs (Altonji and Card, 1991), which leads to think of possible ambiguous results in the estimation. The long-run impacts of an increase in the population of a certain city could (more than) offset the short-run effects. Assuming this process will also turn into an increase in demand for food, services and other economic activities, pushing local business and industries to increase their demand for labor and rising the economical growth of those areas \citep{altonji1991, jaeger1996}.  Adding to these potential sources of ambiguity, the estimation strategies used to study the effects of immigration on native wages is far from a consensus and generate endless debates and discussions. \par
+The first studies on this matter relied on spatial variation in immigrants inflow as a source of identification. However, this approach brings with it an endogeneity issue, given that migrants tend to go to places with better job opportunities and higher wages, as already mentioned above. In order to solve or minimize this problem, the first attempt was to use past share of immigrants as an instrumental variable \citep{altonji1991}. This identification strategy would satisfy both the relevancy and exogeneity assumptions respectively given that immigrants tend to settle into cities with large immigrant population from their own nationality and that past geographic distance would  not affect current demand for native wages. The biggest disadvantage of this method is that, the share of immigrants in a certain year in the past is fixed, which would prevent the insertion of controls addressing potential sources of city heterogeneity (city Fixed Effects). \par
+As an alternative to it, the typical method that has been used is what is known as the "shift-share IV". The main goal of this strategy is to generate variation at local level by exploiting variation in national inflows, trying to overcome the problem of lack of variation when using past share of immigrants in a city as the instrumental variable \citep{card2001,card2009}. The basic idea of this source of identification is to predict the inflow of immigrants based on two facts: a) the current inflow of immigrants from the countries of origin at the national level \textit{(shift)}; and b) the previous share of population from each country of origin in a city (\textit{share}). However, the use of this instrument was criticized due to the tendency of presenting less negative results if compared to other approaches \citep{jaeger2018} and to change signs with different time periods in the same country studied  \citep{borjas1999}. The main source of this \textit{bias} would be the lack of explanation with the ambiguous effects of both the short and long-run impacts of migrants on native wages. Besides the concern with a general equilibrium effect, "the country of origin composition and settlement patterns of immigrants are often correlated over time, with the same cities repeatedly receiving large inflows" (Jaeger, \textit{et al}., 2018, p. 2), what would make the exogeneity assumption of the "shift-share" IV invalid.  The suggestion therefore was to exploit periods of dramatic changes int he component of immigrants together with instrumenting both current and past immigrants inflows. In other words, using two instruments. \par
+Another set of studies took as the source of identification the different groups withing the migrants.The assumption is that it is possible to separate migrants into groups according to their specific characteristics. While some studies use education and experience as the separator criteria \citep{borjas2003}\footnote{Borjas finds that  immigration lowers the wage of competing workers: a 10 percent increase in supply reduces wages by 3 to 4 percent.}, others use groups occupation \citep{friedberg2001}\footnote{Friedberg uses a combination of natural experiment with an instrumental variable that exploits data on immigrants' occupations in their country of  origin. The  results, in general, suggest that immigrants adversely affect the earnings and employment opportunities of native workers.}, skills \citep{dustmann2016}\footnote{Given different approaches, Dustman argues that the estimations measures different coefficients according to their strategies.The \textit{national skill-cell approach} rely on the assumption that an immigrant and a native with the same measured education and experience compete  against  each  other. In their work, Dustman \textit{et.al} argues that it is not the case in the United States context.} and so many other migrants characteristics. This approach became known, therefore, as the \textit{national skill cell approach} \citep{borjas1997,jaeger1996}. \par
+Finally there is a set of studies that take into consideration randomized phenomena in order to estimate the effect of immigration on native wages. One of the most famous events studied is the Mariel boatlift, a mass emigration of Cubans, who traveled from Cuba's Mariel Harbor to the United States between April \nth{15} and October \nth{31} of 1980. This historical fact provided a good source of a natural experiment (Card, 1990). "The Marie1 immigrants increased the Miami labor force by 7\%, and the percentage increase in labor supply to less-skilled occupations and industries was even greater because most of the immigrants were relatively unskilled" \citep[p.~245]{card1990}. Evidences suggest that the city of Miami was able to rapidly absorb the increase in labor supply, which resulted in no effect on native wages or on unemployment rates. However, studies that revisited the same phenomenon from a different perspective provide evidence that the wage of high school dropouts in Miami dropped by 10\% to 30\% \citep{borjas2017} \footnote{Borjas argues that 60\% of Cubans who migrated were high school dropouts, which would impact primarily the low-skill occupations in Miami. By studying only this specific group, Borjas finds an elasticity of wages with respect to the number of workers between -0.5 and -1.5.}. \par
+Thus, there are several approaches that aim to identify the effects of immigration on native wages. Some of them, like the \textit{area approach}, often find no effect, arguing that there is an equilibrium effect that equates the increase in labor supply by also increasing the goods demand. Others, like the \textit{national skill cells approach} tend to find mixed results on native wages, arguing that migrants are different in their characteristics, which would cause heterogeneous effects on different sectors in the destination country. This paper, therefore, aims to contribute to this literature, specifically looking at a natural experiment and by innovating in analyzing the effects of a massive migration from a developing country to another developing country in South-America, a region that is mostly left behind on the majority of the migration studies. \par
+
+\section{The Massive Venezuelan Migration to Brazil}
+
+The XXI century did not start peacefully in Venezuela. Coming from a series of coup attempts on the 1990's, the country elected Hugo Chavez as president in 1998, who was the leader of a a coup attempt in 1992. Chavez was elected with a platform of bringing a "Bolivarian Revolution" into the country with the implementation of a new constitution that aimed to implement a socialist and populist economic and social policies. In order to do so, the then elected president would take advantage of the high oil prices\footnote{According to OPEC website, Venezuela’s oil revenues account for about 98\% of export earnings \citep{ven_facts}.} Having the land reform as one of his priorities, In 2001, Chavez was able to pass 49 laws in Congress aimed at redistributing land and wealth. As an example, article 307 of the 1999 constitution states that: 
+
+\begin{displayquote} \textit{"The predominance of large idle estates (latifundios) is contrary to the interests of society. Appropriate tax law provisions shall be enacted to tax fallow lands and establish the necessary measures to transform them into productive economic units, likewise recovering arable land. Farmers and other agricultural producers are entitled to own land in the cases and forms specified under the pertinent law. The State shall protect and promote associative and private forms of property in such manner as to guarantee agricultural production. The State shall see to the sustainable ordering of arable land to guarantee its food-producing potential"} \citep{land_ven}\footnote{Land for People not for Proﬁt in Venezuela. Availabe at: https://venezuelanalysis.com/analysis/1310. Accessed on: 12/02/2018.}.
+\end{displayquote} \par
+
+During his time in presidency (1999-2013), Chavez started several social programs, taking advantage of the high oil prices in the world (See Figure \ref{figure1}). However, although economically the country seemed to do well, the president suffered an attempt of coup in 2003. Consequently, Chavez strengthened his government by acting to have a higher control on the media\footnote{In 2007, the government refused to renew terrestrial broadcasting license of RCTV channel, a critical TV channel of President Chavez, causing massive protests for and against him and strong international condemnation.}, approximating the country's relation to Russia\footnote{In 2006, Chavez's signs a \$3bn (£1.6bn) arms deal with Russia, including an agreement to buy fighter jets and helicopters, marking a re-orientation away from US arms supplies.}, expropriating Exxon Mobil and ConocoPhilips, two oil companies that refused to hand over majority control of their operations in the Orinoco Belt to the Venezuelan government (2007), among so many other political actions, which raised concerns, locally and internationally, on his several terms as president. In addition, with the drop in the oil prices in 2010, the economic problems were added to the political instability situation that the country lived since Chavez was in power. In an attempt to control the high inflation (21.07\% monthly), in 2012 Chavez promoted a control on prices of basic goods and suggested that the companies that did not follow the control would be expropriated. Even failing against inflation, Chavez won a fourth term in office, with 54\% of the votes. \par 
+In 2013, Chavez died victim of a cancer. In April of that year, Nicolas Maduro was elected as his successor. His task was not easy, since the world was going through the hardest financial crisis since 1929, the inflation rate was reaching 43\% monthly on that year, the oil prices, main source of Venezuela's exports, started to drop significantly and, politically, the country was shaken due to the fact that opposition groups saw as their chance to get to power after 12 years of Chavez. 
+
+\begin{figure}[H]
+  \centering
+  \captionsetup{justification=centering}
+    \includegraphics[width=15cm]{Oilexports} 
+    \caption{Global Oil Prices Over Time\\ Source: tradingeconomics.com}
+    \label{figure1}
+\end{figure}
+
+Maduro could not handle the situation in the country. His misgovernment lead the country to deepen itself into the crisis that was being formed since 2010. The authoritarian\footnote{In December of 2014, the Venezuela's chief prosecutor formally charges leading opposition figure Maria Corina Machado with conspiracy to assassinate President Maduro. In February, 2015 February, Antonio Ledezma, opposition mayor of Caracas, charged with plotting coup with US support. Ledezma denied the accusations and, instead, accused the government of \textit{stifling criticism}.} way o government of Maduro gave rise to violent protests that killed several Venezuelans\footnote{In September of 2016, hundreds of thousands of people participated in a protest in Caracas calling for the removal of President Maduro, accusing him of responsibility for the economic crisis. In 2017, several people die in confrontations with security forces during mass protests demanding early presidential elections and the revoking of a planned constituent assembly to replace the National Assembly.}. Inflation reached more than 50\% in the end of 2014 and is beyond astonishing  8,000,00\% currently \citep{ven_inflation}\footnote{\textit{Venezuela Inflation Rate.}Available at: \url{https://tradingeconomics.com/venezuela/inflation-cpi}. Accessed on 03/12/2018.} The continuity of the social programs started by Chavez were put at stake\footnote{In November of 2014, the government announced cuts in public spending.} when global oil prices dropped and, by 2016, the government had to increase petrol prices for the first time in 20 years. Finally, in 2018,  "the UN warned of a migration "crisis", estimating that economic woes and food and medical shortages have caused more than two million Venezuelans to leave their country since 2014. Most are settling in nearby Peru, Ecuador, Colombia and Brazil, leading to tensions in the region" \citep{ven_timeline}\footnote{Venezuela profile - Timeline. Available at: \url{https://www.bbc.com/news/world-latin-america-19652436}. Accessed on 03/12/2018.}. Figure \ref{figure2} reports the number of refugee requests by Venezuelans over time in Brazil.\par
+
+\begin{figure}[H]
+  \centering
+  \captionsetup{justification=centering}
+    \includegraphics[width=12cm]{ven_ref_Brazil.png} 
+    \caption{ Number of Regufee Requests by Venezuelans Per Year, 2013-2018 \\ Source: Federal Police}
+    \label{figure2}
+\end{figure}
+
+Although it does not represent the total number of people crossing the borders, it is indeed a lower bound of the number of Venezuelans migrating to the country, since some of them do not request the refugee status for some reason (not being informed about it or some other reason). We can see, therefore, that, although we had a spike already in 2015 and 2016, the slope of the curve is steeper from 2017 onward and the number of Venezuelans requesting a refugee peaks in 2018. \par
+Given the situation, Venezuelans that live close to the Brazilian border, are migrating to the country looking for food and better life conditions. Most of them cross the border walking, as they do not have any resource. On the other side of the country, Venezuelans are migrating to Colombia, also given the proximity. Roraima is the \nth{12}, among 27 states plus the Federal District, in the HDI ranking. With a population of 576,568 inhabitants, the average income is approximately \$271 monthly. Venezuelans are crossing the border of the country with the city of Pacaraima, with a population of 15.580 inhabitants. The city scores even lower on average wage, reaching \$258 approximately monthly (1.8 the minimum wage) and 46.5\% of the population earn up to 1/2  the minimum wage. Finally, Roraima ("RR" in figure \ref{figure3}) is the state that is receiving the majority (almost all) of the Venezuelans migrating to the country.
+
+
+\begin{figure}[H]
+  \centering
+  \captionsetup{justification=centering}
+    \includegraphics[width=12cm]{ven_ref.png} 
+    \caption{Number of Venezuelans Regufee Requests by State Over Time \\ Source: Federal Police}
+    \label{figure3}
+\end{figure}
+
+Figure \ref{figure3} shows that considerable amount of Venezuelans are also going to Amazonas ("AM" in the figure). However, they are entering the country through Roraima and then trying to reach Amazonas. This is because the state has one of the main industrial concentration of the country, which provides better job opportunities, and also because it is still close to the border, making it easier to communicate, send money and maybe bring the rest of the family to Brazil. However, Roraima is still by far the main destination of Venezuelans. All these facts provides evidences and suggest that people are migrating because they have no alternative and Roraima is the closest place they can reach\footnote{See Figure \ref{figure4}.}, given their constrained resources. Thus, we should be able to treat this phenomenon as a natural experiment. 
+
+\begin{figure}[H]
+  \centering
+  \captionsetup{justification=centering}
+    \includegraphics[width=11cm]{map} 
+    \caption{States of Origin of Venezuelans Who Migrate to Roraima State through  Pacaraima}
+    \label{figure4}
+\end{figure}
+
+
+From 2017 to 2018 (until October, 2018), 176,259 Venezuelans migrated to Brazil through Pacaraima {\citep{casa_civil}}\footnote{Documentos. Available at: \url{http://www.casacivil.gov.br/operacao-acolhida/documentos}. Accessed on: 18/09/2018}. Although almost half of those who migrated had left the country at some point, 85,268 of them stayed either in Pacaraima, Boa Vista (the capital of the state) or were relocated to other states. This number accounts for 14.78\% of the population of the state, 22.7\% of the population of the capital Boa Vista and incredibly 547\% of the population of Pacaraima. According to Displacement Tracking Matrix (DTM), "a system to track and monitor the displacement and population mobility, [...] designed to regularly and systematically capture, process and disseminate information to provide a better understanding of the movements and evolving needs of displaced populations, whether on site or en route", in a research made with the Venezuelans that migrated to Roraima in Boa Vista and in Pacaraima between January \nth{25} and March \nth{8} of 2018, they found that 23\% of them came from Bolívar, the nearest state to the Brazilian border, 24\% from Monagas, and 28\% came from Anzoategui (see Figure \ref{figure4}). These three states account for 75\% of the total of migrants. From the sample of 3,516 interviews, 2,420 Venezuelans in Boa Vista and 1,096 of them in Pacaraima, 67\% reported that hey left Venezuela because of economic/labor reasons, 22\% reported the lack of access to food and medical services as the main reason to leave the country and 7\% elected violence as the reason to migrate \citep{monitoring_flow}\footnote{Brasil — Monitoramento do ﬂuxo migratório venezuelano 1 (Abril 2018). Available at: \url{http://www.globaldtm.info/pt/brazil-ﬂow-monitoring-venezuelan-migration-ﬂow-abril-2018}. Accessed on: 12/04/2018.}. Moreover, 42\% report that they
+would hunger if they had to go back to Venezuela, 32\% say they would have no employment, 19\% say there would be no problem and about 1\% fear being persecuted. \par
+In fact, from these findings, it is possible to argue that people are migrating to Brazil because they do not see any alternative. They look either to stay in the country, or using the country as mean to go elsewhere. The same research ran by DTM, reported that 48\% of the interviewees wanted to stay in Brazil, while 52\% have another country, specially Argentina (58\% out of the initial 52\%), as their final destination. From those who are willing to stay, 22\% want to stay in Roraima, while 59\% aim to go to the state of Amazonas. Besides, 50\% of these people have only secondary education, while 12\% have only primary education, 28\% have a college degree and only 1\% have some kind of post-graduation degree\footnote{From the sample, 0.15\% reported no schooling.}. This fact raises the assumption that the sectors that should feel the biggest impacts on native wages are indeed the low-skilled jobs. 57\% reported being unemployed\footnote{Out of the unemployed, the distribution of schooling levels are extremely similar to the total sample, leading to the fact that schooling is not a decisive factor in the hiring of Venezuelans.} and 42\% reported being employed. 33\% of the employed people are in the service sector, 31\% in commerce, followed
+by 13\% on construction. Another astonishing fact is that 83\% earn less than the Brazilian minimum wage (\$254 approximately).
+
+\section{Data and Estimation Strategy}
+
+\subsection{Data}
+
+Two main sources of data were used in this research. Because of that, I divide this section accordingly: a) the data related to the wages and social characteristics of the population in the country; and b) the data related to the migration of Venezuelans.
+
+\subsubsection{Wages and Population Characteristics}
+
+All the data related to the socioeconomic characteristics of the population in Brazil is extracted from \textit{Pesquisa Nacional por Amostra de Domicílios} (PNAD). The National Household Sample Survey (PNAD) is a survey conducted by the Brazilian Institute of Geography and Statistics (IBGE) in a sample of Brazilian households that, for multiple purposes, investigates various socioeconomic characteristics of society, such as population, education, work, income, housing, social security, migration, fecundity, nuptiality, health, nutrition, etc., among other topics. The survey used in this research was conducted every trimester of every year. Although PNAD is a survey conducted since 1967, the time range used here goes from 2010 to 2018.\par
+Tables \ref{table1} and \ref{table2} provide summary statistics and t-statistics for some of the most important characteristics of the population for years before 2016 (when the migration of Venezuelans was intensified)\footnote{See table \ref{table16} in the appendix for a complete version of the summary statistics table}. While table \ref{table1} compares the socioeconomic characteristics of Roraima State with the rest of the country, table \ref{table2} presents the same variables, but now comparing Roraima State to the North region of the country (which Roraima is part of). It is possible to notice that the population in Roraima is younger and the average of people living in a household is higher than in the rest of the country and the region which the state is part of.\par 
+People in Roraima have one more year of schooling if compared to the North (difference that is statistically significant on 1\% level) and 0.56 more if compared to the rest of the country. It also seems that the average number of jobs is not different for Roraima if comparing to the rest of the country nor to the North region. 
+Roraima has also a higher normal and effective monthly wage in the main job and in all jobs in comparison to the rest of the country and the North region, while the normal hours worked weekly in the main job and in all jobs do not seem to differ. An interesting fact is that it seems that people in the three comparison regions effectively work less than their normal hours. \par 
+
+
+\begin{table}[ht]
+  \caption{Summary Statistics and t-test for years Before 2016 - Brazil and Roraima}
+  \label{table1} 
+\centering
+\begin{tabular}{lrrrrrr}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+  & Brazil & Roraima & Difference & t-statistics & p-value \\ 
+  \hline
+Age & 33.17 & 27.71 & 5.46 & 28.06 & 0.00 \\ 
+  People Living in the Household & 3.94 & 4.57 & -0.63 & -28.71 & 0.00 \\ 
+  Years of Schooling & 6.62 & 7.18 & -0.56 & -11.24 & 0.00 \\ 
+  Number of Jobs & 1.03 & 1.05 & -0.01 & -3.87 & 0.00 \\ 
+  Normal Month. Wage Main Job (in R\$)& 1,446.60 & 1,617.04 & -170.44 & -4.78 & 0.00 \\ 
+  Eff. Month. Wage Main Job (in R\$)& 1,451.83 & 1,622.98 & -171.15 & -4.65 & 0.00 \\ 
+  Normal Month. Wage All Jobs (in R\$)& 1,489.50 & 1,710.60 & -221.10 & -5.51 & 0.00 \\ 
+  Eff. Month. Wage All Jobs (in R\$) & 1,494.10 & 1,715.98 & -221.87 & -5.37 & 0.00 \\ 
+  Normal Weekly Wkd. Hours Main Job &39.20 & 38.33 & 0.87 & 4.17 & 0.00 \\
+  Normal Weekly Wkd. Hours All Jobs & 39.80 & 39.29 & 0.51 & 2.34 & 0.02 \\ 
+  Eff. Weekly Wkd. Hours All Jobs & 38.24 & 37.88 & 0.36 & 1.50 & 0.13 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[ht]\centering
+  \caption{Summary Statistics and t-test for years Before 2016 - North Region and Roraima}
+  \label{table2} 
+\begin{tabular}{lrrrrrr}
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+  & North & Roraima & Difference & t-statistics & p-value \\ 
+  \hline
+Age & 29.06 & 27.71 & 1.35 & 6.67 & 0.00 \\ 
+  People Living in the Household & 4.59 & 4.57 & 0.03 & 1.15 & 0.25 \\ 
+  Years of Schooling & 6.19 & 7.18 & -1.00 & -19.38 & 0.00 \\ 
+  Number of Jobs & 1.03 & 1.05 & -0.01 & -3.82 & 0.00 \\ 
+  Normal Month. Wage Main Job (in R\$) & 1,283.71 & 1,617.04 & -333.33 & -9.16 & 0.00 \\ 
+  Eff. Month. Wage Main Job (in R\$)& 1,279.66 & 1,622.98 & -343.32 & -9.14 & 0.00 \\ 
+  Normal Month. Wage All Jobs (in R\$)& 1,321.64 & 1,710.60 & -388.95 & -9.51 & 0.00 \\ 
+  Eff. Month. Wage All Jobs (in R\$)& 1,317.87 & 1,715.98 & -398.11 & -9.44 & 0.00 \\ 
+  Normal Weekly Wkd. Hours Main Job & 38.48 & 38.33 & 0.15 & 0.67 &0.50\\
+ Normal Weekly Wkd.  Hours All Jobs & 39.11 & 39.29 & -0.19 & -0.84 & 0.40 \\ 
+ Eff. Weekly Wkd. Hours All Jobs & 37.65 & 37.88 & -0.23 & -0.94 & 0.35 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+Furthermore, table \ref{table3} provides frequecies for more specific categories related to social, educational and labor market characteristics of the population of these three different regions. It is important to highlight the high frequency of non-answered items (N/A in the table). In Pannel C, for example, the rate of non-answered approaches 60\% for every different region either in the sector of the economy that the person works or the level of hours worked weekly. In pannel A, it is possible to see that the survey seems to be well divided between men and women and also seems to point to an interesting fact that only a few people consider themselves of being black, while the biggest majority considers themselves as either "Parda" (which is a mix between indigenous and white people) and white. This trend repeats itself for every region, but being even stronger in the North and in Roraima. \par
+
+
+\begin{table}[htbp]
+  \centering
+  \caption{Table of  Frequencies of Characteristics for years before 2016}
+    \label{table3} 
+    \begin{tabular}{lrrr}
+    \hline
+    \hline
+    Characteristics & \multicolumn{1}{l}{Brazil} & \multicolumn{1}{l}{North} & \multicolumn{1}{l}{Roraima} \\
+    \hline
+    \multicolumn{4}{c}{\textit{Panel A: Social}} \\
+    Man   & 48.97\% & 50.50\% & 51.10\% \\
+    Woman & 51.03\% & 49.50\% & 48.90\% \\
+    Black & 7.02\% & 5.17\% & 6.15\% \\
+    Ignored & 0.03\% & 0.04\% & 0.00\% \\
+    Indigenous & 0.25\% & 0.60\% & 4.34\% \\
+    \textit{Parda} & 52.28\% & 74.73\% & 70.00\% \\
+    White & 40.06\% & 19.26\% & 19.45\% \\
+    Yellow & 0.35\% & 0.20\% & 0.06\% \\
+    \multicolumn{4}{c}{\textit{Panel B: Education}} \\
+    College Degree & 7.79\% & 5.26\% & 7.93\% \\
+    Complete Elementary School & 8.45\% & 8.00\% & 8.19\% \\
+    Complete High School & 18.88\% & 16.82\% & 19.95\% \\
+    Incomplete College & 3.31\% & 2.87\% & 4.49\% \\
+    Incomplete Elementary School & 35.45\% & 36.08\% & 31.01\% \\
+    Incomplete High School & 6.01\% & 6.02\% & 6.51\% \\
+    N/A   & 6.61\% & 8.55\% & 9.06\% \\
+    None/Less than 1 year & 13.51\% & 16.38\% & 12.86\% \\
+    \multicolumn{4}{c}{\textit{Panel C: Labor Market}} \\
+    Any Rural Job & 7.59\% & 9.76\% & 5.91\% \\
+    Commerce + Veh Repair & 7.69\% & 7.40\% & 7.52\% \\
+    Construction & 3.37\% & 3.30\% & 3.78\% \\
+    Educ./Health/Soc. Services & 4.31\% & 3.70\% & 5.08\% \\
+    Food Service & 1.93\% & 1.59\% & 1.95\% \\
+    House work & 2.80\% & 2.25\% & 2.62\% \\
+    Industry & 5.23\% & 4.01\% & 2.56\% \\
+    Info/Communication/Financial Activities & 3.76\% & 2.46\% & 3.17\% \\
+    N/A   & 56.98\% & 58.74\% & 57.87\% \\
+    Non defined activities & 0.01\% & 0.01\% & 0.00\% \\
+    Other Services & 1.79\% & 1.44\% & 1.48\% \\
+    Public Admin/Defense/Soc. Sec. & 2.67\% & 3.71\% & 6.88\% \\
+    Transportation & 1.86\% & 1.62\% & 1.18\% \\
+    15-39 Week. Wkd. Hs. & 11.37\% & 12.93\% & 13.46\% \\
+    40-44 Week. Wkd. Hs. & 18.20\% & 14.00\% & 15.61\% \\
+    45-48 Week. Wkd. Hs. & 5.52\% & 6.42\% & 5.36\% \\
+    49 or more Week. Wkd. Hs. & 4.66\% & 4.59\% & 4.54\% \\
+    N/A   & 56.98\% & 58.74\% & 57.87\% \\
+    Up to 14 Week. Wkd. Hs. & 3.28\% & 3.31\% & 3.17\% \\
+    \hline
+Observations & 1,571,130 & 116,639 & 9,964\\
+\hline  
+\end{tabular}%
+  \label{tab:addlabel}%
+\end{table}%
+
+
+\begin{figure}[H]
+  \centering
+  \captionsetup{justification=centering}
+    \includegraphics[width=10cm]{graph_wage_Brazil.png} 
+    \caption{Average Monthly Wage in the Main Job in Brazil per State \\ Source: PNAD}
+    \label{figure5}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \captionsetup{justification=centering}
+    \includegraphics[width=10cm]{graph_wage_North.png}
+    \caption{Average Monthly Wage in the Main Job in the North Region per State \\ Source: PNAD}
+    \label{figure6}
+\end{figure}
+
+Pannel B, in addition, depicts that, Roraima, although not being among the richest states in the country seems to have a higher percentage of people with college degree than the North or the entire country (7.93\% compared to 5.26\% and 7.79\% respectively). All the other levels of education seem to be fairly balanced, but we can also notice the higher percentage of the population with incomplete college. This fact could be explained by pannel C, that shows that Roraima has a bigger share of the population in the sectors of Public Administration, Defense or Social Security, types of jobs that require a higher level of education. Roraima also presents the lowest rate of people working in rural jobs (5.91\% compared to 7.59\% in the entire country and 9.7\% in the North region) and in industry (2.56\% compared to 5.23\% in Brazil and 2.46\% in the North). All the rest looks similar between the three regions. \par
+Finally, figures \ref{figure5} and \ref{figure6} depict the evolution of effectively monthly wages in the main job respectively in the entire country and in the North region for each state over time. From figure \ref{figure5}, it seems that Roraima is not among the states with the lowest wages in the country, but also is not among the ones with the most well paid jobs. "Distrito Federal" (the Federal District) is above every other state in the graph because it is in the capital of the country where most of the public jobs, which are the ones with the highest wages, are in, which pushes the average wage up. Among all the other states, São Paulo is the one with the highest wages and Maranhão is the one with the lowest ones. \par
+In addition, figure \ref{figure6} depicts the position of Roraima within its region. Then, it is possible to see that it was behind Amapá until 2017, but took the lead in 2018 as the state with the highest wages in the main job in the North of the country. Amazonas, a state well known by its vast natural resources and one of the most important industrial poles in Brazil suffered with a decrease in wages from 2017 to 2018. 
+
+
+
+\subsubsection{Venezuelans Migrants}
+
+The data on the amount of Venezuelans crossing the border comes from a set of reports done by either the Federal Police or the "Ministério da Casa Civil". Part of the data is publicly available online \citep{casa_civil}\footnote{Documentos. Available at:\url{http://www.casacivil.gov.br/operacao-acolhida/documentos}. Accessed on: 18/09/2018} and another part is not. These two institutions are responsible first to register every person who enters the country, the location they are entering the country, the day, the nationality and so many other characteristics. Secondly, and in the case of the Venezuelan migration to Roraima, they count the number of people who needs any type of assistance, try to direct them to some other places in the country to avoid an overcrowding in the state, etc\footnote{For more information, see "Operação Acolhida" at Ministério da Casa Civil's website.}. 
+
+\begin{figure}[H]
+  \centering
+  \captionsetup{justification=centering}
+    \includegraphics[width=12cm]{all_ref.png} 
+    \caption{Number of Regufee Requests by State Over Time \\ Source: Federal Police}
+    \label{figure7}
+\end{figure}
+
+Even with all this effort by the local authorities it is still hard to measure with precision the exact number of people who migrated to the country and who stayed in Brazil given the long border and the several ways in which people try to cross it. Thus, as a proxy variable, I use the number of migrants who required refugee status in each state from years 2010 and 2018. According to the Brazilian law, in order to formally work or study in the country, migrants must request a specific type of visa\footnote{With the humanitarian crisis, the country has created mechanisms to facilitate the new life of migrants. One of these measure was to allow the temporary residence of Venezuelans. However, it still required from them the correct type o visa to work in the country. Many are persecuted politicians and fit into the category of refugees, who come to the country also in search of better living conditions. In order to regularize their situation in the Federal Police, the immigrant had to pay a fee of R\$ 311.22 to the government. In August of 2017, the Federal Court in Roraima exempted them from the payment \citep{camila}. Besides, "under Brazilian law, while their asylum requests are being processed, they cannot be deported, are entitled to a work permit, and are allowed to enroll children in school" \citep{hrw}.}. Because of that, we should expect that the number of refugees with the documentation regularized are the ones who are able to create an effect in the formal labor market\footnote{I also check for possible impacts on informal labor market. See the Results section.}.\par 
+Figure \ref{figure7} shows the number of migrants who requested a refugee status in the country from all nationalities. If we compare these numbers with figure \ref{figure3} in section 2, it is clear the most of the migrants requesting a refugee status in Brazil (if not all of them, specially in 2017 and 2018) are Venezuelans and are either in Roraima, Amazonas or São Paulo. Still, Roraima receives by far the highest amount of Venezuelans migrants if compared to the rest of the country. \par
+This is one of the reasons why I do not include Amazonas in the estimation for the North region in the results. As already mentioned in section 3, 59\% of the migrants aim to go to Amazonas. Thus, the arrival of migrants there is not at random,  which creates an endogeneity problem if we take this state into account. More on how I dealt with that problem not only for the estimation in the North region, but also for the entire country will be described in the next section.
+
+\subsection{Estimation Strategy}
+
+The main estimation strategy is based on the argument made in section 2. Since I treat this phenomenon as a natural experiment, the strategy used is a simple OLS equation with fixed effects. Thus, the model is defined as following: 
+
+$${ln(outcome)_{irsyt}}=\beta_0+\beta_1{Immigrants}_{sry}+\beta_2{time}+ \beta_3{X_{irsyt}} + \theta_{y} + \theta_{t}+\theta_{r}+\theta_{s}+\xi_{irsyt}$$ 
+
+Where the dependent variable is either log of monthly wages or log of hours worked weekly of individual \textit{i} in region \textit{r}, state \textit{s}, year \textit{y}, trimester \textit{t}; ${time}$ is a time trend that captures the evolution of the outcomes over time; ${Immigrants}_{sry}$ is the increase, in percentage points, of the population in the state \textit{s}, region \textit{r}, and year \textit{y} as a result of the migration of Venezuelans; $\displaystyle{X_{irsyt}}$ is a set of control variables that include sex, race, level of education, sector of the economy, number of jobs, the number of people living in the household, if the job is formal, if the worker contributes to social security, years of schooling, the type of earnings (if the worker earns his/her wage in cash or not), and some other categorical variables; $\displaystyle{\theta_{y}}$, $\displaystyle{\theta_{t}}$, $\displaystyle{\theta_{r}}$ and $\displaystyle{\theta_{s}}$ are respectively year, trimester, region and state fixed effects and $\xi_{irsyt}$ is the error term. \par
+Thus the coefficient of interest is $\beta_1$, which will depict the elasticity of the labor market outcome with respect to the increase in the population. In other words, $\beta_1$ is the percentage of change in the outcome of interest as a result of a 1\% change in the increase in the population of the region as a consequence of the Venezuelan migration. \par
+Although it seems to be simple, it is important to highlight some of the concerns behind this rationale. First, as already mentioned, a big share of Venezuelans who migrated to Roraima, when asked about their final destination, answered that they wanted to go to Amazonas, a state that shares borders with Roraima. This fact creates a non-randomness in our study if we include the state in the estimation. Secondly, the Brazilian Government, together with the Army, started an operation named "Operação Acolhida" as an answer to the massive migration of Venezuelans in the country. Not only the federal government provided financial aid with several volunteers from the health sector to Roraima, but started trying to take some of the migrants to other places in the country in order to avoid worse conditions in the state, which might have worked as a factor that softened the effects of the Venezuelan migration to the state, also contributing to the interpretation that the estimates are a lower bound of the real effect. \par 
+In addition, this operation did not choose randomly the ones who would be moved, nor their destination. It only moved those who wanted to and to the states/cities they chose to go. This would also create a non-randomness factor when dealing with the estimation in the entire country. However, the number of people taken to other states reached only 5,482 \citep{op_acolhida}\footnote{Estratégia de Interiorização dos Venezuelanos.(March 2019). Available at: \url{http://www.casacivil.gov.br/operacao-acolhida/documentos}. Accessed on: 04/29/2019.}, what, if divided by the population of these states, does not create the same impact as the one in Roraima. Thus, for the estimations for the North region, I drop Amazonas, which would lead it to biased estimators, but when dealing with the entire country, all the states are considered. The estimators for the entire country and the North region, given the concerns with endogeneity problems, will be depicted only as a matter of comparison, but the focus of this work is the effect of the massive migration of Venezuelans in Roraima, specification that should be consistent and unbiased. 
+
+
+
+\section{Results}
+
+This section is subdivided in three. First I show the aggregate results for the three regions being studied. Second, I investigate the effects by level of education and, subsequently, by sector of the economy. This analysis will allow us to better understand if the massive entry of Venezuelans in Roraima affected one class of individuals more than others. 
+
+\subsection{Aggregate Results}
+
+Tables \ref{table4} to \ref{table7} report aggregate results for the entire country, the North Region and Roraima. The odd columns depict the results without fixed effects, while the even ones show the results for the main strategy including fixed effects. The results suggest that, on average, in Roraima, every additional year of schooling increases monthly wages by 5\%, women tend to earn 21.9\% less than men and whites earn 15.3\% more. The number of jobs is always associated with higher monthly wages, reaching a 60\% higher wage in all jobs for an additional job (see table \ref{table5}). The coefficient of interest ($\beta_1$) is depicted in the first row of the tables. Interestingly, as seen in figures \ref{figure5} and \ref{figure6}, the wages are increasing over time in every region, but the massive entry of Venezuelans, specially in Roraima, seems to be counteracting this trend. \par
+Thus, on table \ref{table4}, the coefficient in columns (2), (4) and (6) respectively, indicate that a 1\% increase in the population caused by the entry of Venezuelans decreases the effective monthly wages in the main job for the entire country by 1.2\% (significant at 10\% level) and by 1.4\% in Roraima (significant at 5\% level). For the North region, the effect is null, as we should expect. The same trend is observed in table \ref{table5}, where the coefficient of interest for Roraima is even higher in magnitude, indicating a decrease of 1.5\% (significant at 5\% level) on effective monthly wage in all jobs as a result of a 1\% increase in the population caused by the immigrants. Because of that, if we consider that, in the year of 2018, 46,974 Venezuelans requested refugee status in Roraima\footnote{These are the official numbers of people who actually requested the refugee status and not the total amount who entered the country. As already highlighted, it is hard to measure with precision the exact number of people who crossed the border and actually stayed in the country or in Roraima. Because of that, these results are a lower bound of the actual effect.}, which represents a 8.14\% increase in the population of Roraima, the effective monthly wage in the main job and in all jobs decreased respectively by 11.39\% and 12.21\% only on that year. In absolute values, it represents a reduction of R\$ 184.85 and R\$ 209.52 respectively on average for workers in the state\footnote{The calculation is taking into account the average of R\$ 1,622.98 and R\$ 1,715.98 respectively for effective monthly wage in the main job and in all jobs as shown in tables \ref{table1} and \ref{table2}. Thus, $0.014\times0.0814\times1,622.98=184.85$ and $0.014\times0.0814\times1,715.98=209.52 $.}. \par
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+\resizebox{.6\textwidth}{!}{\begin{minipage}{\textwidth}
+\begin{adjustbox}{angle=90}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+  \caption{Effect of Venezuelan Migration on Monthly Wage in the Main Job} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-7} 
+\\[-1.8ex] & \multicolumn{6}{c}{Ln of Monthly Wage in Main Job} \\ 
+ & \multicolumn{2}{c}{Brazil} & \multicolumn{2}{c}{North Region} & \multicolumn{2}{c}{Roraima} \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\ 
+\hline \\[-1.8ex] 
+Immigrants & 0.002 & $-$0.012$^{*}$ & 0.014$^{***}$ & $-$0.001 & $-$0.014$^{***}$ & $-$0.014$^{**}$ \\ 
+  & (0.005) & (0.006) & (0.004) & (0.006) & (0.004) & (0.006) \\ 
+  & & & & & & \\ 
+Time Trend & 0.038$^{***}$ & 0.059$^{***}$ & 0.022$^{***}$ & 0.049$^{***}$ & 0.064$^{***}$ & 0.065$^{***}$ \\ 
+  & (0.001) & (0.009) & (0.004) & (0.008) & (0.006) & (0.008) \\ 
+  & & & & & & \\ 
+ Years of Schooling & 0.055$^{***}$ & 0.055$^{***}$ & 0.037$^{***}$ & 0.037$^{***}$ & 0.052$^{***}$ & 0.052$^{***}$ \\ 
+  & (0.001) & (0.001) & (0.005) & (0.005) & (0.010) & (0.010) \\ 
+  & & & & & & \\ 
+Women & $-$0.271$^{***}$ & $-$0.274$^{***}$ & $-$0.266$^{***}$ & $-$0.264$^{***}$ & $-$0.219$^{***}$ & $-$0.219$^{***}$ \\ 
+  & (0.003) & (0.003) & (0.010) & (0.010) & (0.017) & (0.017) \\ 
+  & & & & & & \\ 
+Indigenous & $-$0.025 & $-$0.033 & $-$0.005 & $-$0.011 & $-$0.017 & $-$0.015 \\ 
+  & (0.024) & (0.023) & (0.054) & (0.054) & (0.047) & (0.047) \\ 
+  & & & & & & \\ 
+Parda & 0.002 & 0.014$^{***}$ & $-$0.016 & $-$0.014 & 0.038 & 0.037 \\ 
+  & (0.004) & (0.004) & (0.015) & (0.015) & (0.028) & (0.028) \\ 
+  & & & & & & \\ 
+White & 0.159$^{***}$ & 0.108$^{***}$ & 0.105$^{***}$ & 0.106$^{***}$ & 0.153$^{***}$ & 0.153$^{***}$ \\ 
+  & (0.004) & (0.004) & (0.017) & (0.017) & (0.030) & (0.030) \\ 
+  & & & & & & \\ 
+ Yellow & 0.259$^{***}$ & 0.191$^{***}$ & 0.153$^{**}$ & 0.157$^{**}$ & 0.571$^{***}$ & 0.571$^{***}$ \\ 
+  & (0.013) & (0.013) & (0.064) & (0.063) & (0.170) & (0.170) \\ 
+  & & & & & & \\ 
+  Number of Jobs & 0.095$^{***}$ & 0.107$^{***}$ & 0.119$^{***}$ & 0.126$^{***}$ & 0.100$^{***}$ & 0.102$^{***}$ \\ 
+  & (0.006) & (0.006) & (0.022) & (0.022) & (0.035) & (0.035) \\ 
+  & & & & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & No & Yes & No & Yes & No & Yes \\ 
+Set of Controls & Yes & Yes & Yes & Yes & Yes & Yes \\ 
+Observations & 314,898 & 314,898 & 23,871 & 23,871 & 7,042 & 7,042 \\ 
+R$^{2}$ & 0.526 & 0.544 & 0.527 & 0.529 & 0.544 & 0.544 \\ 
+Adjusted R$^{2}$ & 0.526 & 0.544 & 0.526 & 0.528 & 0.541 & 0.541 \\ 
+Residual Std. Error & 12.837 (df = 314855) & 12.592 (df = 314824) & 9.459 (df = 23828) & 9.442 (df = 23816) & 5.236 (df = 7000) & 5.236 (df = 6993) \\ 
+F Statistic & 8,312.833$^{***}$ (df = 42; 314855) & 5,140.932$^{***}$ (df = 73; 314824) & 632.844$^{***}$ (df = 42; 23828) & 495.722$^{***}$ (df = 54; 23816) & 203.505$^{***}$ (df = 41; 7000) & 173.934$^{***}$ (df = 48; 6993) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\hline
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Columns, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively. 
+\end{tablenotes}
+\label{table4}
+\end{threeparttable}
+\end{adjustbox}
+\end{minipage} }
+\end{table}
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+\resizebox{.6\textwidth}{!}{\begin{minipage}{\textwidth}
+\begin{adjustbox}{angle=90}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+  \caption{Effect of Venezuelan Migration on Monthly Wage in All Jobs} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-7} 
+\\[-1.8ex] & \multicolumn{6}{c}{Ln of Monthly Wage in All Jobs} \\ 
+ & \multicolumn{2}{c}{Brazil} & \multicolumn{2}{c}{North Region} & \multicolumn{2}{c}{Roraima} \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\ 
+\hline \\[-1.8ex] 
+Immigrants & 0.003 & $-$0.011$^{*}$ & 0.015$^{***}$ & $-$0.0002 & $-$0.014$^{***}$ & $-$0.015$^{**}$ \\ 
+  & (0.005) & (0.006) & (0.004) & (0.006) & (0.004) & (0.006) \\ 
+  & & & & & & \\ 
+Time Trend & 0.037$^{***}$ & 0.060$^{***}$ & 0.021$^{***}$ & 0.049$^{***}$ & 0.064$^{***}$ & 0.066$^{***}$ \\ 
+  & (0.001) & (0.009) & (0.004) & (0.008) & (0.006) & (0.008) \\ 
+  & & & & & & \\ 
+Years of Schooling & 0.055$^{***}$ & 0.055$^{***}$ & 0.037$^{***}$ & 0.037$^{***}$ & 0.054$^{***}$ & 0.054$^{***}$ \\ 
+  & (0.001) & (0.001) & (0.005) & (0.005) & (0.010) & (0.010) \\ 
+  & & & & & & \\ 
+Women & $-$0.272$^{***}$ & $-$0.275$^{***}$ & $-$0.269$^{***}$ & $-$0.266$^{***}$ & $-$0.221$^{***}$ & $-$0.220$^{***}$ \\ 
+  & (0.003) & (0.003) & (0.010) & (0.010) & (0.017) & (0.017) \\ 
+  & & & & & & \\ 
+Indigenous & $-$0.028 & $-$0.037 & $-$0.008 & $-$0.016 & $-$0.021 & $-$0.018 \\ 
+  & (0.024) & (0.023) & (0.054) & (0.054) & (0.047) & (0.047) \\ 
+  & & & & & & \\ 
+Parda & 0.002 & 0.014$^{***}$ & $-$0.016 & $-$0.014 & 0.034 & 0.033 \\ 
+  & (0.004) & (0.004) & (0.015) & (0.015) & (0.027) & (0.027) \\ 
+  & & & & & & \\ 
+White & 0.159$^{***}$ & 0.107$^{***}$ & 0.105$^{***}$ & 0.106$^{***}$ & 0.148$^{***}$ & 0.148$^{***}$ \\ 
+  & (0.004) & (0.004) & (0.017) & (0.017) & (0.030) & (0.030) \\ 
+  & & & & & & \\ 
+Yellow & 0.260$^{***}$ & 0.192$^{***}$ & 0.163$^{**}$ & 0.166$^{***}$ & 0.567$^{***}$ & 0.567$^{***}$ \\ 
+  & (0.013) & (0.013) & (0.064) & (0.064) & (0.169) & (0.169) \\ 
+  & & & & & & \\ 
+Number of Jobs & 0.509$^{***}$ & 0.521$^{***}$ & 0.514$^{***}$ & 0.521$^{***}$ & 0.604$^{***}$ & 0.606$^{***}$ \\ 
+  & (0.006) & (0.006) & (0.022) & (0.022) & (0.034) & (0.034) \\ 
+  & & & & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & No & Yes & No & Yes & No & Yes \\ 
+Set of Controls & Yes & Yes & Yes & Yes & Yes & Yes \\ 
+Observations & 315,269 & 315,269 & 23,903 & 23,903 & 7,049 & 7,049 \\ 
+R$^{2}$ & 0.534 & 0.552 & 0.534 & 0.536 & 0.568 & 0.569 \\ 
+Adjusted R$^{2}$ & 0.534 & 0.552 & 0.533 & 0.535 & 0.566 & 0.566 \\ 
+Residual Std. Error & 12.852 (df = 315225) & 12.607 (df = 315194) & 9.502 (df = 23859) & 9.485 (df = 23847) & 5.207 (df = 7006) & 5.206 (df = 6999) \\ 
+F Statistic & 8,411.123$^{***}$ (df = 43; 315225) & 5,248.218$^{***}$ (df = 74; 315194) & 635.362$^{***}$ (df = 43; 23859) & 500.332$^{***}$ (df = 55; 23847) & 219.608$^{***}$ (df = 42; 7006) & 188.387$^{***}$ (df = 49; 6999) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\hline
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Columns, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively. 
+\end{tablenotes}
+\label{table5}
+\end{threeparttable}
+\end{adjustbox}
+\end{minipage} }
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+\resizebox{.6\textwidth}{!}{\begin{minipage}{\textwidth}
+\begin{adjustbox}{angle=90}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+  \caption{Effect of Venezuelan Migration on Monthly Hours Worked Normally in Main Job} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-7} 
+\\[-1.8ex] & \multicolumn{6}{c}{Ln of Monthly Hours Worked Normally in Main Job} \\ 
+ & \multicolumn{2}{c}{Brazil} & \multicolumn{2}{c}{North Region} & \multicolumn{2}{c}{Roraima} \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\ 
+\hline \\[-1.8ex] 
+Immigrants  & 0.003 & 0.001 & 0.003 & 0.001 & 0.002 & $-$0.004 \\ 
+  & (0.003) & (0.004) & (0.003) & (0.004) & (0.002) & (0.004) \\ 
+  & & & & & & \\ 
+Time Trend & $-$0.006$^{***}$ & $-$0.005 & $-$0.005$^{**}$ & $-$0.003 & $-$0.003 & 0.001 \\ 
+  & (0.0005) & (0.005) & (0.002) & (0.005) & (0.003) & (0.005) \\ 
+  & & & & & & \\ 
+ Years of Schooling & 0.002$^{**}$ & 0.001$^{*}$ & 0.001 & 0.001 & $-$0.011$^{**}$ & $-$0.012$^{**}$ \\ 
+  & (0.001) & (0.001) & (0.003) & (0.003) & (0.006) & (0.006) \\ 
+  & & & & & & \\ 
+Women & $-$0.098$^{***}$ & $-$0.098$^{***}$ & $-$0.165$^{***}$ & $-$0.165$^{***}$ & $-$0.129$^{***}$ & $-$0.129$^{***}$ \\ 
+  & (0.001) & (0.001) & (0.006) & (0.006) & (0.010) & (0.010) \\ 
+  & & & & & & \\ 
+Indigenous & $-$0.008 & $-$0.012 & $-$0.005 & $-$0.003 & $-$0.017 & $-$0.018 \\ 
+  & (0.013) & (0.013) & (0.032) & (0.032) & (0.027) & (0.027) \\ 
+  & & & & & & \\ 
+Parda & $-$0.007$^{***}$ & $-$0.006$^{**}$ & $-$0.006 & $-$0.005 & $-$0.003 & $-$0.002 \\ 
+  & (0.002) & (0.003) & (0.009) & (0.009) & (0.016) & (0.016) \\ 
+  & & & & & & \\ 
+White & 0.003 & $-$0.003 & $-$0.0004 & 0.00004 & 0.012 & 0.012 \\ 
+  & (0.002) & (0.003) & (0.010) & (0.010) & (0.018) & (0.018) \\ 
+  & & & & & & \\ 
+Yellow & $-$0.007 & $-$0.017$^{**}$ & $-$0.041 & $-$0.041 & $-$0.140 & $-$0.138 \\ 
+  & (0.008) & (0.008) & (0.039) & (0.039) & (0.100) & (0.100) \\ 
+  & & & & & & \\ 
+ Number of Jobs & $-$0.137$^{***}$ & $-$0.133$^{***}$ & $-$0.091$^{***}$ & $-$0.090$^{***}$ & $-$0.120$^{***}$ & $-$0.118$^{***}$ \\ 
+  & (0.004) & (0.004) & (0.013) & (0.013) & (0.021) & (0.021) \\ 
+  & & & & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & No & Yes & No & Yes & No & Yes \\ 
+Set of Controls & Yes & Yes & Yes & Yes & Yes & Yes \\ 
+Observations & 336,826 & 336,826 & 26,241 & 26,241 & 7,532 & 7,532 \\ 
+R$^{2}$ & 0.200 & 0.203 & 0.191 & 0.192 & 0.168 & 0.170 \\ 
+Adjusted R$^{2}$ & 0.200 & 0.203 & 0.190 & 0.190 & 0.164 & 0.164 \\ 
+Residual Std. Error & 7.569 (df = 336782) & 7.557 (df = 336751) & 5.955 (df = 26197) & 5.954 (df = 26185) & 3.188 (df = 7489) & 3.187 (df = 7482) \\ 
+F Statistic & 1,961.886$^{***}$ (df = 43; 336782) & 1,158.167$^{***}$ (df = 74; 336751) & 144.216$^{***}$ (df = 43; 26197) & 113.049$^{***}$ (df = 55; 26185) & 36.112$^{***}$ (df = 42; 7489) & 31.208$^{***}$ (df = 49; 7482) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\hline
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Columns, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively. 
+\end{tablenotes}
+\label{table6}
+\end{threeparttable}
+\end{adjustbox}
+\end{minipage} }
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+\resizebox{.6\textwidth}{!}{\begin{minipage}{\textwidth}
+\begin{adjustbox}{angle=90}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+  \caption{Effect of Venezuelan Migration on Monthly Hours Worked Normally in All Jobs} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-7} 
+\\[-1.8ex] & \multicolumn{6}{c}{Ln of Monthly Hours Worked Normally in All Jobs} \\ 
+ & \multicolumn{2}{c}{Brazil} & \multicolumn{2}{c}{North Region} & \multicolumn{2}{c}{Roraima} \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\ 
+\hline \\[-1.8ex] 
+Immigrants & 0.004 & 0.002 & 0.003 & 0.001 & 0.003 & $-$0.003 \\ 
+  & (0.003) & (0.004) & (0.003) & (0.004) & (0.002) & (0.004) \\ 
+  & & & & & & \\ 
+Time Trend & $-$0.006$^{***}$ & $-$0.005 & $-$0.005$^{**}$ & $-$0.003 & $-$0.003 & 0.001 \\ 
+  & (0.0005) & (0.005) & (0.002) & (0.005) & (0.003) & (0.005) \\ 
+  & & & & & & \\ 
+Years of Schooling & 0.002$^{**}$ & 0.001$^{*}$ & 0.0001 & 0.0001 & $-$0.011$^{**}$ & $-$0.012$^{**}$ \\ 
+  & (0.001) & (0.001) & (0.003) & (0.003) & (0.006) & (0.006) \\ 
+  & & & & & & \\ 
+Women & $-$0.098$^{***}$ & $-$0.098$^{***}$ & $-$0.166$^{***}$ & $-$0.166$^{***}$ & $-$0.130$^{***}$ & $-$0.130$^{***}$ \\ 
+  & (0.001) & (0.001) & (0.006) & (0.006) & (0.010) & (0.010) \\ 
+  & & & & & & \\ 
+Indigenous & $-$0.007 & $-$0.011 & $-$0.0005 & 0.0004 & $-$0.016 & $-$0.016 \\ 
+  & (0.013) & (0.013) & (0.032) & (0.032) & (0.027) & (0.027) \\ 
+  & & & & & & \\ 
+Parda & $-$0.006$^{***}$ & $-$0.006$^{**}$ & $-$0.003 & $-$0.002 & $-$0.002 & $-$0.001 \\ 
+  & (0.002) & (0.003) & (0.009) & (0.009) & (0.016) & (0.016) \\ 
+  & & & & & & \\ 
+White & 0.003 & $-$0.003 & 0.002 & 0.003 & 0.012 & 0.012 \\ 
+  & (0.002) & (0.003) & (0.010) & (0.010) & (0.018) & (0.018) \\ 
+  & & & & & & \\ 
+Yellow & $-$0.008 & $-$0.018$^{**}$ & $-$0.034 & $-$0.033 & $-$0.141 & $-$0.139 \\ 
+  & (0.008) & (0.008) & (0.039) & (0.039) & (0.100) & (0.100) \\ 
+  & & & & & & \\ 
+ Number of Jobs & 0.261$^{***}$ & 0.264$^{***}$ & 0.331$^{***}$ & 0.332$^{***}$ & 0.376$^{***}$ & 0.378$^{***}$ \\ 
+  & (0.004) & (0.004) & (0.013) & (0.013) & (0.021) & (0.021) \\ 
+  & & & & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & No & Yes & No & Yes & No & Yes \\ 
+Set of Controls & Yes & Yes & Yes & Yes & Yes & Yes \\ 
+Observations & 336,826 & 336,826 & 26,241 & 26,241 & 7,532 & 7,532 \\ 
+R$^{2}$ & 0.205 & 0.208 & 0.206 & 0.206 & 0.191 & 0.192 \\ 
+Adjusted R$^{2}$ & 0.205 & 0.208 & 0.204 & 0.205 & 0.186 & 0.187 \\ 
+Residual Std. Error & 7.549 (df = 336782) & 7.537 (df = 336751) & 5.943 (df = 26197) & 5.943 (df = 26185) & 3.178 (df = 7489) & 3.177 (df = 7482) \\ 
+F Statistic & 2,025.761$^{***}$ (df = 43; 336782) & 1,195.641$^{***}$ (df = 74; 336751) & 157.801$^{***}$ (df = 43; 26197) & 123.670$^{***}$ (df = 55; 26185) & 42.030$^{***}$ (df = 42; 7489) & 36.277$^{***}$ (df = 49; 7482) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\hline
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Columns, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively. 
+\end{tablenotes}
+\label{table7}
+\end{threeparttable}
+\end{adjustbox}
+\end{minipage} }
+\end{table}
+
+
+
+Tables \ref{table6} and \ref{table7} show the results with the dependent variables being respectively normal weekly worked hours in the main job and in all jobs. Both tables suggest that an additional year of schooling is associated with 1.2\% less hours worked weekly (results significant at 5\% level), that women tend to work 12.9\% and 13\% less hours in the main job and in all jobs respectively (significant at 1\% level) and that there is no differentiation withing race in Roraima. Besides, table \ref{table6} indicates that an extra job decreases by 11.8\% the hours worked in the main job, while table \ref{table7} suggests that it increases by 37.8\% the hours worked in all jobs normally during the week in the state. These trends are similar for both the North region and the entire country. The biggest difference is that, in the entire country, \textit{Pardos} and \textit{Yellows} seem to work less hours, and an additional year of schooling is associated with 0.2\% of more worked hours during the week (although this coefficient is significant at 10\% level). \par
+However, no effect on normal weekly worked hours is found as a consequence of the migration of Venezuelans in aggregate for any region. The direction of the estimates suggest that worked hours are also decreasing, but the results are not significant at any confidence level equal or above 10\%. On the other hand, these estimates does not indicate that the effects are homogeneous for every class of workers. It may be the case that some category of workers are being more affected than the others and that some sectors of the economy are also more affected than the others. The next two parts of the paper will investigate these two hypothesis. \par
+
+
+\subsection{Results by Level of Education}
+
+Tables \ref{table8} and \ref{table9} indicate that, if we desegregate the workers by level of education, and investigate the effect of the increase in the population of the state as a result of the migration of Venezuelans, no specific class is being more affected than the other. Although the direction seems to indicate that all of them are having their wages being reduced either in the main job or in all jobs (with exception of the workers with none or less than one year of education and their wages in all jobs as indicated in table \ref{table9}, the results are not statistically significant. Thus we can only see the significant reduction in effective monthly wages in the aggregate results reported in the subsection above. \par
+On the other hand, by desegregating the results of normal weekly worked hours by level of education, I find that the impact is indeed not homogeneous between them. Tables \ref{table10} and \ref{table11} report these results. Estimations of table \ref{table10} indicate that, workers with high school degree, incomplete college, and incomplete elementary school are the ones more affected by the migrants. Column (3) suggests that they are working respectively 0.6\%, 0.8\% and 1.4\% less hours weekly in the main job in Roraima \footnote{Since college degree workers is the reference of this categorical variable, the estimates are found by summing each category's coefficient with the one for college degree workers}.The results are not significant for the entire country nor the North region. Table \ref{table11} reassures the findings in table \ref{table10} but also suggests that not only workers with incomplete high school are also working 0.4\% less, but also that college degree workers are working 0.8\% more hours per week normally in all jobs (both results significant at 10\% level of confidence). 
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+\caption{Desegregated Effect of Venezuelan Migration on Effective Monthly Wage in the Main Job by Worker's Education}
+\begin{adjustbox}{width=1.1\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Ln of Effective Monthly Wage in Main Job} \\ 
+ & Brazil & North Region & Roraima \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+College Degree & $-$0.002 & 0.005 & $-$0.009 \\ 
+  & (0.012) & (0.010) & (0.008) \\ 
+  & & & \\ 
+Complete Elementary School & $-$0.021 & $-$0.010 & $-$0.013 \\ 
+  & (0.026) & (0.020) & (0.012) \\ 
+  & & & \\ 
+Complete High School & $-$0.018 & $-$0.015 & $-$0.009 \\ 
+  & (0.015) & (0.012) & (0.007) \\ 
+  & & & \\ 
+Incomplete College & $-$0.005 & $-$0.012 & $-$0.005 \\ 
+  & (0.023) & (0.018) & (0.011) \\ 
+  & & & \\ 
+Incomplete Elementary School & $-$0.013 & 0.009 & $-$0.012 \\ 
+  & (0.018) & (0.013) & (0.008) \\ 
+  & & & \\ 
+Incomplete High School & $-$0.010 & $-$0.003 & $-$0.008 \\ 
+  & (0.024) & (0.018) & (0.012) \\ 
+  & & & \\ 
+None/Less than 1 year & 0.021 & 0.021 & $-$0.001 \\ 
+  & (0.029) & (0.022) & (0.014) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & Yes & Yes & Yes \\ 
+Set of Controls & Yes & Yes & Yes \\ 
+Observations & 314,898 & 23,871 & 7,042 \\ 
+R$^{2}$ & 0.504 & 0.489 & 0.517 \\ 
+Adjusted R$^{2}$ & 0.504 & 0.487 & 0.514 \\ 
+Residual Std. Error & 13.126 (df = 314819) & 9.842 (df = 23811) & 5.390 (df = 6988) \\ 
+F Statistic & 4,105.435$^{***}$ (df = 78; 314819) & 385.650$^{***}$ (df = 59; 23811) & 141.318$^{***}$ (df = 53; 6988) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Column, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively. 
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\label{table8}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+\caption{Desegregated Effect of Venezuelan Migration on Effective Monthly Wage in All Jobs by Worker's Education}
+\begin{adjustbox}{width=1.1\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Ln of Effective Monthly Wage in All Jobs} \\ 
+ & Brazil & North Region & Roraima \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+College Degree & $-$0.001 & 0.006 & $-$0.011 \\ 
+  & (0.012) & (0.010) & (0.008) \\ 
+  & & & \\ 
+Complete Elementary School & $-$0.016 & $-$0.004 & $-$0.005 \\ 
+  & (0.026) & (0.020) & (0.012) \\ 
+  & & & \\ 
+Complete High School & $-$0.019 & $-$0.016 & $-$0.008 \\ 
+  & (0.015) & (0.012) & (0.007) \\ 
+  & & & \\ 
+Incomplete College & $-$0.008 & $-$0.014 & $-$0.004 \\ 
+  & (0.023) & (0.018) & (0.011) \\ 
+  & & & \\ 
+Incomplete elementary school & $-$0.014 & 0.008 & $-$0.011 \\ 
+  & (0.017) & (0.013) & (0.008) \\ 
+  & & & \\ 
+Incomplete high school & $-$0.011 & $-$0.005 & $-$0.006 \\ 
+  & (0.024) & (0.019) & (0.012) \\ 
+  & & & \\ 
+None/Less than 1 year & 0.020 & 0.019 & 0.001 \\ 
+  & (0.029) & (0.022) & (0.014) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & Yes & Yes & Yes \\ 
+Set of Controls & Yes & Yes & Yes \\ 
+Observations & 315,269 & 23,903 & 7,049 \\ 
+R$^{2}$ & 0.514 & 0.497 & 0.543 \\ 
+Adjusted R$^{2}$ & 0.514 & 0.495 & 0.539 \\ 
+Residual Std. Error & 13.132 (df = 315189) & 9.877 (df = 23842) & 5.361 (df = 6994) \\ 
+F Statistic & 4,217.714$^{***}$ (df = 79; 315189) & 392.149$^{***}$ (df = 60; 23842) & 153.907$^{***}$ (df = 54; 6994) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Column, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively. 
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\label{table9}
+\end{table}
+
+
+
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+\caption{Desegregated Effect of Venezuelan Migration on Normal Weekly Worked Hours in the Main Job by Worker's Education}
+\begin{adjustbox}{width=1.1\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Ln of Normal Weekly Worked Hours in Main Job} \\ 
+ & Brazil & North Region & Roraima \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+College Degree & 0.002 & $-$0.0002 & 0.008 \\ 
+  & (0.007) & (0.006) & (0.005) \\ 
+  & & & \\ 
+Complete Elementary School & 0.002 & 0.0004 & $-$0.011 \\ 
+  & (0.014) & (0.011) & (0.007) \\ 
+  & & & \\ 
+Complete High School & $-$0.003 & 0.001 & $-$0.012$^{***}$ \\ 
+  & (0.009) & (0.007) & (0.004) \\ 
+  & & & \\ 
+Incomplete College & $-$0.005 & $-$0.002 & $-$0.016$^{**}$ \\ 
+  & (0.013) & (0.010) & (0.006) \\ 
+  & & & \\ 
+Incomplete Elementary School & $-$0.0005 & $-$0.001 & $-$0.022$^{***}$ \\ 
+  & (0.010) & (0.008) & (0.005) \\ 
+  & & & \\ 
+Incomplete High School & $-$0.0003 & $-$0.002 & $-$0.011 \\ 
+  & (0.013) & (0.011) & (0.007) \\ 
+  & & & \\ 
+None/Less than year & 0.029$^{*}$ & 0.026$^{*}$ & $-$0.001 \\ 
+  & (0.016) & (0.013) & (0.008) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & Yes & Yes & Yes \\ 
+Set of Controls & Yes & Yes & Yes \\ 
+Observations & 336,826 & 26,241 & 7,532 \\ 
+R$^{2}$ & 0.203 & 0.192 & 0.172 \\ 
+Adjusted R$^{2}$ & 0.203 & 0.190 & 0.166 \\ 
+Residual Std. Error & 7.557 (df = 336744) & 5.955 (df = 26179) & 3.183 (df = 7476) \\ 
+F Statistic & 1,058.142$^{***}$ (df = 81; 336744) & 101.999$^{***}$ (df = 61; 26179) & 28.311$^{***}$ (df = 55; 7476) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Column, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively. 
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\label{table10}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+\caption{Desegregated Effect of Venezuelan Migration on Normal Weekly Worked Hours in All Jobs by Worker's Education}
+\begin{adjustbox}{width=1.1\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Ln of Normal Weekly Worked Hours in All Jobs} \\ 
+ & Brazil & North Region & Roraima \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+College Degree & 0.004 & 0.002 & 0.008$^{*}$ \\ 
+  & (0.007) & (0.006) & (0.005) \\ 
+  & & & \\ 
+Complete Elementary School & $-$0.002 & $-$0.002 & $-$0.012$^{*}$ \\ 
+  & (0.014) & (0.011) & (0.007) \\ 
+  & & & \\ 
+Complete High School & $-$0.005 & $-$0.001 & $-$0.013$^{***}$ \\ 
+  & (0.009) & (0.007) & (0.004) \\ 
+  & & & \\ 
+Incomplete College & $-$0.007 & $-$0.004 & $-$0.017$^{***}$ \\ 
+  & (0.013) & (0.010) & (0.006) \\ 
+  & & & \\ 
+Incomplete Elementary School & $-$0.003 & $-$0.003 & $-$0.022$^{***}$ \\ 
+  & (0.010) & (0.008) & (0.005) \\ 
+  & & & \\ 
+Incomplete high school & $-$0.003 & $-$0.004 & $-$0.012$^{*}$ \\ 
+  & (0.013) & (0.011) & (0.007) \\ 
+  & & & \\ 
+None/Less than 1 year & 0.026 & 0.024$^{*}$ & $-$0.001 \\ 
+  & (0.016) & (0.013) & (0.008) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & Yes & Yes & Yes \\ 
+Set of Controls & Yes & Yes & Yes \\ 
+Observations & 336,826 & 26,241 & 7,532 \\ 
+R$^{2}$ & 0.208 & 0.206 & 0.195 \\ 
+Adjusted R$^{2}$ & 0.208 & 0.204 & 0.189 \\ 
+Residual Std. Error & 7.537 (df = 336745) & 5.943 (df = 26179) & 3.173 (df = 7476) \\ 
+F Statistic & 1,106.016$^{***}$ (df = 80; 336745) & 111.575$^{***}$ (df = 61; 26179) & 32.869$^{***}$ (df = 55; 7476) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\hline
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Column, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively. 
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\label{table11}
+\end{table}
+
+
+
+Therefore, all the workers without a college degree are working less hours weekly, and receiving a lower wage in the main job and in all jobs. The estimates suggests an increase in the competition for low and middle skilled jobs as a consequence of a higher offer of workers in the labor market. On the other hand, the increase in hours worked in all jobs by college degree professionals  may be a result of the extra work created by the massive entry of Venezuelans for professionals of some specific sectors of the economy that require a higher qualification. In fact, the federal government increased the presence of professionals specially from the health sector in Roraima in order to assist the migrants and also reinforced the borders with a higher presence of the army and public workers in order to register the entry of Venezuelans, organize the operations and redirect them to specific places built to receive them. Thus, the effects on the college degree workers may be not a direct consequence of the migration of Venezuelans, but an indirect one. 
+
+
+
+
+
+
+\subsection{Results by Sector of The Economy}
+
+
+Finally, in order to confirm these findings, I now desegregate the effects observed in section 5.1 by sectors of the economy. Tables \ref{table12} and \ref{table13} report the estimates for normal monthly wages in the main job and in all jobs respectively. Column (3) of table \ref{table12} suggests that the most affected sectors of the economy are the construction and the industry ones. Respectively, a 1\% increase n the population as a result of the Venezuelan migration to Roraima, decreased the wages of the workers in these two sectors by 4\% and 4.3\% in the state\footnote{Now, "Any Rural Job" is the reference of this categorical variable. Thus the estimates are found by summing each category’s coefficient with the one for "Any Rural Job".} (results significant at 5\% level). None of the estimates are significant for the entire country and the North region.\par 
+Table \ref{table13} depicts the effect on normal monthly wages in all jobs separated by the sector of the economy of the worker's main job. It not only reassures the findings in table\ref{table12} for construction and industry (with estimates higher in magnitude if the worker's main job is in industry - 4.7\% decrease, significant at 5\% level) in Roraima, but also indicates that, if the worker's main job is at food services, he/she is experiencing a 3.8\% decrease in effective monthly wages in all jobs (significant at 10\% level). In addition, column (3) also indicates marginally significant decrease in wages in the North region for Commerce + Vehicle Repair (4.9\%), Construction (5.5\%) and Information/Communication/Financial Activities (5.5\%), while the results are not significant for the entire country. 
+Tables \ref{table14} and \ref{table15} report results by sector with the dependent variable being normal weekly hours worked in the main job and in all jobs respectively.
+
+
+\begin{table}[htbp]\centering
+\caption{Desegregated Effect of Venezuelan Migration on Effective Monthly Wage in the Main Job by Sectors of The Economy}
+\begin{adjustbox}{width=1.1\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Ln of Effective Monthly Wage in Main Job} \\ 
+ & Brazil & North Region & Roraima \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+Any Rural Job & $-$0.018 & 0.013 & $-$0.013 \\ 
+  & (0.019) & (0.015) & (0.011) \\ 
+  & & & \\ 
+Commerce + Veh. Repair & $-$0.004 & $-$0.025 & $-$0.008 \\ 
+  & (0.023) & (0.017) & (0.011) \\ 
+  & & & \\ 
+Construction & $-$0.027 & $-$0.032 & $-$0.027$^{**}$ \\ 
+  & (0.027) & (0.020) & (0.013) \\ 
+  & & & \\ 
+Educ./Health/Soc. Services & 0.025 & $-$0.006 & 0.010 \\ 
+  & (0.023) & (0.018) & (0.011) \\ 
+  & & & \\ 
+Food Service & $-$0.015 & $-$0.023 & $-$0.024 \\ 
+  & (0.031) & (0.024) & (0.015) \\ 
+  & & & \\ 
+ House work & 0.030 & 0.012 & 0.011 \\ 
+  & (0.028) & (0.021) & (0.013) \\ 
+  & & & \\ 
+Industry & $-$0.022 & $-$0.030 & $-$0.030$^{**}$ \\ 
+  & (0.032) & (0.024) & (0.015) \\ 
+  & & & \\ 
+Info/Communication/Financial Activities & $-$0.017 & $-$0.031 & $-$0.009 \\ 
+  & (0.027) & (0.021) & (0.013) \\ 
+  & & & \\ 
+Other Services & 0.025 & 0.013 & 0.006 \\ 
+  & (0.038) & (0.029) & (0.018) \\ 
+  & & & \\ 
+Public Admin/Defense/Soc. Sec. & 0.039 & 0.004 & 0.014 \\ 
+  & (0.024) & (0.018) & (0.011) \\ 
+  & & & \\ 
+Transportation & 0.005 & $-$0.011 & $-$0.022 \\ 
+  & (0.035) & (0.027) & (0.017) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & Yes & Yes & Yes \\ 
+Set of Controls & Yes & Yes & Yes \\ 
+Observations & 314,898 & 23,871 & 7,042 \\ 
+R$^{2}$ & 0.504 & 0.489 & 0.519 \\ 
+Adjusted R$^{2}$ & 0.504 & 0.487 & 0.515 \\ 
+Residual Std. Error & 13.126 (df = 314814) & 9.841 (df = 23806) & 5.381 (df = 6984) \\ 
+F Statistic & 3,858.364$^{***}$ (df = 83; 314814) & 355.651$^{***}$ (df = 64; 23806) & 132.321$^{***}$ (df = 57; 6984) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Column, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively. 
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\label{table12}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+\caption{Desegregated Effect of Venezuelan Migration on Effective Monthly Wage in All Jobs by Sectors of The Economy}
+\begin{adjustbox}{width=1.1\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Ln of Effective Monthly Wage in All Jobs} \\ 
+ & Brazil & North Region & Roraima \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+Any Rural Job & $-$0.014 & 0.018 & $-$0.009 \\ 
+  & (0.019) & (0.015) & (0.010) \\ 
+  & & & \\ 
+Commerce + Veh. Repair & $-$0.009 & $-$0.031$^{*}$ & $-$0.013 \\ 
+  & (0.022) & (0.017) & (0.011) \\ 
+  & & & \\ 
+Construction & $-$0.031 & $-$0.037$^{*}$ & $-$0.031$^{**}$ \\ 
+  & (0.027) & (0.020) & (0.013) \\ 
+  & & & \\ 
+Educ./Health/Soc. Services & 0.021 & $-$0.010 & 0.004 \\ 
+  & (0.023) & (0.018) & (0.011) \\ 
+  & & & \\ 
+Food Service & $-$0.019 & $-$0.027 & $-$0.029$^{*}$ \\ 
+  & (0.031) & (0.024) & (0.015) \\ 
+  & & & \\ 
+House work & 0.026 & 0.007 & 0.008 \\ 
+  & (0.028) & (0.021) & (0.013) \\ 
+  & & & \\ 
+Industry & $-$0.029 & $-$0.038 & $-$0.038$^{**}$ \\ 
+  & (0.032) & (0.024) & (0.015) \\ 
+  & & & \\ 
+Info/Communication/Financial Activities & $-$0.022 & $-$0.037$^{*}$ & $-$0.014 \\ 
+  & (0.027) & (0.021) & (0.013) \\ 
+  & & & \\ 
+Other Services & 0.023 & 0.010 & 0.001 \\ 
+  & (0.038) & (0.029) & (0.018) \\ 
+  & & & \\ 
+Public Admin/Defense/Soc. Sec. & 0.035 & $-$0.001 & 0.009 \\ 
+  & (0.024) & (0.018) & (0.011) \\ 
+  & & & \\ 
+Transportation & $-$0.0004 & $-$0.016 & $-$0.026 \\ 
+  & (0.035) & (0.027) & (0.017) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & Yes & Yes & Yes \\ 
+Set of Controls & Yes & Yes & Yes \\ 
+Observations & 315,269 & 23,903 & 7,049 \\ 
+R$^{2}$ & 0.514 & 0.497 & 0.545 \\ 
+Adjusted R$^{2}$ & 0.514 & 0.496 & 0.541 \\ 
+Residual Std. Error & 13.132 (df = 315184) & 9.876 (df = 23837) & 5.352 (df = 6990) \\ 
+F Statistic & 3,966.921$^{***}$ (df = 84; 315184) & 362.169$^{***}$ (df = 65; 23837) & 144.325$^{***}$ (df = 58; 6990) \\ 
+\hline 
+\hline \\[-1.8ex]
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Column, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\label{table13}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+\caption{Desegregated Effect of Venezuelan Migration on Normal Weekly Worked Hours in the Main Job by Sectors of The Economy}
+\begin{adjustbox}{width=1.1\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Ln of Normal Hours Worked weekly in Main Job} \\
+ & Brazil & North Region & Roraima \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+Any Rural Job & 0.008 & 0.017$^{*}$ & $-$0.003 \\ 
+  & (0.010) & (0.008) & (0.006) \\ 
+  & & & \\ 
+Commerce + Veh. Repair & $-$0.010 & $-$0.021$^{**}$ & $-$0.009 \\ 
+  & (0.012) & (0.010) & (0.006) \\ 
+  & & & \\ 
+Construction & $-$0.003 & $-$0.016 & $-$0.007 \\ 
+  & (0.014) & (0.012) & (0.007) \\ 
+  & & & \\ 
+Educ./Health/Soc. Services & $-$0.015 & $-$0.022$^{**}$ & 0.007 \\ 
+  & (0.013) & (0.010) & (0.006) \\ 
+  & & & \\ 
+Food Service & $-$0.005 & $-$0.019 & $-$0.009 \\ 
+  & (0.017) & (0.014) & (0.008) \\ 
+  & & & \\ 
+House work & 0.026$^{*}$ & $-$0.001 & 0.014$^{*}$ \\ 
+  & (0.015) & (0.012) & (0.007) \\ 
+  & & & \\ 
+Industry & $-$0.016 & $-$0.028$^{**}$ & $-$0.010 \\ 
+  & (0.017) & (0.013) & (0.008) \\ 
+  & & & \\ 
+Info/Communication/Financial Activities & $-$0.015 & $-$0.018 & 0.001 \\ 
+  & (0.015) & (0.012) & (0.007) \\ 
+  & & & \\ 
+Other Services & 0.006 & 0.010 & $-$0.003 \\ 
+  & (0.021) & (0.017) & (0.010) \\ 
+  & & & \\ 
+Public Admin/Defense/Soc. Sec. & $-$0.008 & $-$0.015 & 0.008 \\ 
+  & (0.013) & (0.010) & (0.006) \\ 
+  & & & \\ 
+Transportation & $-$0.024 & $-$0.040$^{**}$ & $-$0.023$^{**}$ \\ 
+  & (0.020) & (0.016) & (0.010) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & Yes & Yes & Yes \\ 
+Set of Controls & Yes & Yes & Yes \\ 
+Observations & 336,826 & 26,241 & 7,532 \\ 
+R$^{2}$ & 0.203 & 0.192 & 0.173 \\ 
+Adjusted R$^{2}$ & 0.203 & 0.190 & 0.167 \\ 
+Residual Std. Error & 7.557 (df = 336740) & 5.954 (df = 26174) & 3.182 (df = 7472) \\ 
+F Statistic & 1,008.442$^{***}$ (df = 85; 336740) & 94.471$^{***}$ (df = 66; 26174) & 26.535$^{***}$ (df = 59; 7472) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Column, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\label{table14}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+\caption{Desegregated Effect of Venezuelan Migration on Normal Weekly Worked Hours in All Jobs by Sectors of The Economy}
+\begin{adjustbox}{width=1.1\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Ln of Normal Hours Worked weekly in All Jobs} \\ 
+ & Brazil & North Region & Roraima \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+Any Rural Job & 0.007 & 0.016$^{*}$ & $-$0.004 \\ 
+  & (0.010) & (0.008) & (0.006) \\ 
+  & & & \\ 
+Commerce + Veh. Repair & $-$0.009 & $-$0.020$^{**}$ & $-$0.008 \\ 
+  & (0.012) & (0.010) & (0.006) \\ 
+  & & & \\ 
+Construction & $-$0.003 & $-$0.015 & $-$0.006 \\ 
+  & (0.014) & (0.011) & (0.007) \\ 
+  & & & \\ 
+Educ./Health/Soc. Services & $-$0.011 & $-$0.019$^{*}$ & 0.008 \\ 
+  & (0.013) & (0.010) & (0.006) \\ 
+  & & & \\ 
+Food Service & $-$0.003 & $-$0.017 & $-$0.008 \\ 
+  & (0.017) & (0.014) & (0.008) \\ 
+  & & & \\ 
+House work & 0.026$^{*}$ & 0.0003 & 0.015$^{**}$ \\ 
+  & (0.015) & (0.012) & (0.007) \\ 
+  & & & \\ 
+Industry & $-$0.015 & $-$0.028$^{**}$ & $-$0.009 \\ 
+  & (0.017) & (0.013) & (0.008) \\ 
+  & & & \\ 
+Info/Communication/Financial Activities & $-$0.014 & $-$0.017 & 0.002 \\ 
+  & (0.015) & (0.012) & (0.007) \\ 
+  & & & \\ 
+Other Services & 0.007 & 0.011 & $-$0.003 \\ 
+  & (0.021) & (0.017) & (0.010) \\ 
+  & & & \\ 
+Public Admin/Defense/Soc. Sec. & $-$0.007 & $-$0.014 & 0.009 \\ 
+  & (0.013) & (0.010) & (0.006) \\ 
+  & & & \\ 
+Transportation & $-$0.024 & $-$0.040$^{**}$ & $-$0.023$^{**}$ \\ 
+  & (0.020) & (0.016) & (0.010) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & Yes & Yes & Yes \\ 
+Set of Controls & Yes & Yes & Yes \\ 
+Observations & 336,826 & 26,241 & 7,532 \\ 
+R$^{2}$ & 0.208 & 0.207 & 0.196 \\ 
+Adjusted R$^{2}$ & 0.208 & 0.205 & 0.189 \\ 
+Residual Std. Error & 7.537 (df = 336740) & 5.942 (df = 26174) & 3.172 (df = 7472) \\ 
+F Statistic & 1,041.054$^{***}$ (df = 85; 336740) & 103.311$^{***}$ (df = 66; 26174) & 30.783$^{***}$ (df = 59; 7472) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Column, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\label{table15}
+\end{table}
+
+
+Table \ref{table14}, column (3) depict the estimates for Roraima. It suggests that workers who work at home are increasing their normal hours worked weekly by 1.1\% as a result of a 1\% increase in the population caused by the Venezuelan migration. On the other hand, workers in the transportation sector are working 2.6\% less hours. Although not significant, the results for Education/Health/Social Services, Public Administration/Defense/Social Security professionals indicate an increase in worked hours for these sectors, which reinforces the idea that workers in these types of jobs, that require higher qualification, are being required more worked hours weekly\footnote{Workers in the Information/Communication/Financial Activities are also the ones who should be included as college degree ones, and may be contributing to the increase in hours worked weekly in all jobs as seen in the previous section, but they are not among those being sent by the federal government to Roraima to assist the migrants, although there may be an increase in these type of professionals in order to report what has been happening on the border with Venezuela (in the case of Information and Communication professionals).}. Besides, columns (1) and (2) indicate that, although not significant (with the exception of Education/Health/Social Services) , the sign of the estimates for the professions highlighted above as being part of the college degree category, is negative, suggesting a decrease in hours worked by these professionals in Brazil and the North region, while in Roraima, the sign is the opposite. \par
+The results in table \ref{table15} also confirm the ones in table \ref{table14}. Workers whose main job is at home and on transportation are increasing their worked hours by 1.1\% weekly and decreasing it by 2.7\% respectively. In both tables there are no significant results for the analysis in the entire country and some significant results for the North region. Since we do not drop Roraima from the estimations in the North region, it may be driving the results in this specification, with exception of the more qualified professions. This fact suggests that professionals with higher skills are being moved specially from the North region to Roraima to assist the migrants who entered the country. \par
+Finally, I also check if the migration of Venezuelans increased the probability of either having an informal job, working without any payment or working and not receiving money as payment. It could indicate that indeed some of the migrants that are not regularized in the country are working and even suggest some bad working conditions, in the case of people working for no earnings or working for other types of earnings. However, none of the estimates are significant and they can be seen on the appendix on tables \ref{table17} to \ref{table19}.
+
+
+\section{Conclusion}
+
+This article brings a new perspective on the effects of a labor supply shock on local labor markets by studying a natural experiment on a developing country. The increase of the population in the state of Roraima in Brazil caused by the massive migrants of Venezuelans in the country as a result of a deep economic and political crisis in Venezuela seem to be generating significant effects on local labor markets. On aggregate, a 1\% increase in the population of Roraima per year seems to reduce the monthly wage in the main job by 1.4\% and do not affect the number of hours worked weekly.\par
+However, "the effect of immigration on the wage structure depends crucially on the differences between the skill distributions of immigrants and natives. The direct effect of immigration is most likely to be felt by those workers who had similar capabilities"\citep{borjas2017}. Departing from this idea presented in the literature and on the fact that surveys suggest that the wave of Venezuelan migrants arriving in Brazil is composed by 62\% of people with up to secondary education, the main direct effects of the massive increase in the labor force should be expected to come from this specific group in the population. \par
+Careful attention should be given due to the fact that even high-skilled migrants could be working in low-skilled jobs due to several reasons like not speaking the language, xenophobia, etc. Therefore, dividing the results by sectors of the economy instead of level of education proved to be more informative to understand what has been happening in the labor market in Roraima. At the same time, I also find evidences of some indirect effects on labor outcomes for professionals with higher education and in specific sectors of the economy as a result of the response of the federal and state governments to this humanitarian crisis in Roraima. \par
+Thus, this article confirms that effects indeed differ across groups, but are better seen on the different sectors of the economy. While estimates suggest that in fact workers with lower level of education are working less hours during the week, they do not provide significant evidences of reduction in monthly wages for these groups. On the other hand, by looking at different sectors of the economy, we find that the construction and the industry sectors are the ones with significant reductions in monthly wages in the main job as a result of an increase in the population caused by the massive arrival of Venezuelan migrant. Respectively, the elasticities of the monthly wage in the main job with respect to the raise in the population is 4\% and 4.3\%. Besides, estimates suggest that house workers are working more hours weekly with no changes in wages. \par
+After years of a labor literature studying the effects of migration on developed countries, this article redirects the focus to the importance of putting developing countries in the center of the analysis. Not only due to their global economic and political importance, but also to shed a light on important phenomena happening in the developing world and to create basis on how governments must deal with these situations. 
+
+
+\section{Appendix}
+
+
+
+\begin{table}[htbp]\centering
+  \caption{Summary Statistics for years Before 2016}
+\begin{adjustbox}{width=.75\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+\multicolumn{6}{c}{\textit{Panel A: Roraima}} \\
+\\
+Age & 9,964 & 27.71 & 19.28 & 0 & 103 \\ 
+People Living in the Household & 9,964 & 4.57 & 2.18 & 1 & 19 \\ 
+Years of Schooling & 9,061 & 7.18 & 4.71 & 0.00 & 15.00 \\ 
+Number of Jobs & 4,198 & 1.05 & 0.22 & 1.00 & 3.00 \\ 
+Normal Month. Wage Main Job & 4,004 & 1,617.04 & 2,243.03 & 30.00 & 40,000.00 \\ 
+Eff. Month. Wage Main Job & 4,004 & 1,622.98 & 2,315.65 & 0.00 & 40,000.00 \\ 
+Normal Month. Wage All Jobs & 4,006 & 1,710.60 & 2,528.95 & 30.00 & 45,000.00 \\ 
+Eff. Month. Wage All Jobs & 4,006 & 1,715.98 & 2,606.52 & 0.00 & 54,000.00 \\ 
+Weekly Wkd. Normally Hours All Jobs & 4,198 & 39.29 & 13.95 & 1.00 & 120.00 \\ 
+Weekly Wkd. Eff. Hours All Jobs & 4,198 & 37.88 & 15.31 & 0.00 & 120.00 \\ 
+\\
+\multicolumn{6}{c}{\textit{Panel B: North}} \\
+\\
+Age & 126,603 & 28.95 & 19.95 & 0 & 121 \\ 
+People Living in the Household & 126,603 & 4.59 & 2.20 & 1 & 30 \\ 
+Years of Schooling & 115,723 & 6.26 & 4.62 & 0.00 & 15.00 \\ 
+Number of Jobs & 52,321 & 1.03 & 0.19 & 1.00 & 3.00 \\ 
+Normal Month. Wage Main Job & 48,005 & 1,311.51 & 1,790.14 & 10.00 & 40,000.00 \\ 
+Eff. Month. Wage Main Job & 48,005 & 1,308.30 & 1,837.18 & 0.00 & 50,000.00 \\ 
+Normal Month. Wage All Jobs & 48,038 & 1,354.08 & 1,910.53 & 10.00 & 47,000.00 \\ 
+Eff. Month. Wage All Jobs & 48,038 & 1,351.07 & 1,965.90 & 0.00 & 54,000.00 \\ 
+Weekly Wkd. Normally Hours All Jobs & 52,321 & 39.12 & 13.80 & 1.00 & 120.00 \\ 
+Weekly Wkd. Eff. Hours All Jobs & 52,321 & 37.67 & 15.01 & 0.00 & 120.00 \\ 
+\\
+\multicolumn{6}{c}{\textit{Panel C: Brazil}} \\
+\\
+Age & 911,140 & 33.11 & 21.14 & 0 & 130 \\ 
+People Living in the Household & 911,140 & 3.94 & 1.81 & 1 & 30 \\ 
+Years of Schooling & 849,052 & 6.63 & 4.63 & 0.00 & 15.00 \\ 
+Number of Jobs & 398,257 & 1.03 & 0.19 & 1.00 & 3.00 \\ 
+Normal Month. Wage Main Job & 376,794 & 1,448.41 & 2,142.78 & 1.00 & 200,000.00 \\ 
+Eff. Month. Wage Main Job & 376,794 & 1,453.65 & 2,189.40 & 0.00 & 191,666.00 \\ 
+Normal Month. Wage All Jobs & 377,017 & 1,491.84 & 2,251.03 & 1.00 & 200,000.00 \\ 
+Eff. Month. Wage All Jobs & 377,017 & 1,496.46 & 2,298.45 & 0.00 & 191,666.00 \\ 
+Weekly Wkd. Normally Hours All Jobs & 398,257 & 39.79 & 13.42 & 1.00 & 120.00 \\ 
+Weekly Wkd. Eff. Hours All Jobs & 398,257 & 38.23 & 14.83 & 0.00 & 120.00 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular}
+\end{threeparttable}
+\end{adjustbox}
+\label{table16}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+  \caption{Probability of Having a Formal Job} 
+\begin{adjustbox}{width=.8\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Formal Job = 1} \\ 
+ & Brazil & North Region & Roraima \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+Immigrants & 0.000$^{***}$ & 0.000 & $-$0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Time Trend & 0.000$^{***}$ & $-$0.000 & $-$0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Years of Schooling & $-$0.000 & $-$0.000 & 0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Women & $-$0.000$^{***}$ & 0.000$^{***}$ & $-$0.000$^{***}$ \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Indigenous & 0.000$^{***}$ & $-$0.000 & $-$0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Parda & 0.000$^{***}$ & 0.000$^{***}$ & $-$0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+White & 0.000$^{***}$ & 0.000$^{**}$ & $-$0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Yellow & 0.000$^{***}$ & 0.000$^{**}$ & $-$0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Number of Jobs & $-$0.000 & $-$0.000 & $-$0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & Yes & Yes & Yes \\ 
+Set of Controls & Yes & Yes & Yes \\ 
+Observations & 336,826 & 26,241 & 7,532 \\ 
+Log Likelihood & 10,548,050.000 & 855,299.400 & 262,650.300 \\ 
+Akaike Inf. Crit. & $-$21,095,950.000 & $-$1,710,487.000 & $-$525,200.500 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Column, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\label{table17}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+  \caption{Probability of Working For Payment} 
+\begin{adjustbox}{width=.7\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Working for Payment = 1} \\ 
+ & Brazil & North Region & Roraima \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+Immigrants & $-$0.00004 & $-$0.00003 & $-$0.0001 \\ 
+  & (0.0001) & (0.0001) & (0.0002) \\ 
+  & & & \\ 
+Time Trend & 0.0001 & 0.0001 & 0.0002 \\ 
+  & (0.0002) & (0.0002) & (0.0002) \\ 
+  & & & \\ 
+Years of Schooling & $-$0.00003 & 0.00002 & $-$0.0001 \\ 
+  & (0.00003) & (0.0001) & (0.0003) \\ 
+  & & & \\ 
+Women & $-$0.00005 & $-$0.0001 & 0.00000 \\ 
+  & (0.0001) & (0.0002) & (0.0005) \\ 
+  & & & \\ 
+Indigenous & 0.00001 & 0.0004 & 0.0002 \\ 
+  & (0.0005) & (0.001) & (0.001) \\ 
+  & & & \\ 
+Parda & 0.0002$^{*}$ & 0.0001 & $-$0.0001 \\ 
+  & (0.0001) & (0.0003) & (0.001) \\ 
+  & & & \\ 
+White & 0.0002$^{**}$ & 0.0001 & $-$0.0005 \\ 
+  & (0.0001) & (0.0003) & (0.001) \\ 
+  & & & \\ 
+Yellow & $-$0.00004 & 0.0003 & 0.0003 \\ 
+  & (0.0003) & (0.001) & (0.005) \\ 
+  & & & \\ 
+Number of Jobs & $-$0.004$^{***}$ & $-$0.005$^{***}$ & $-$0.007$^{***}$ \\ 
+  & (0.0001) & (0.0004) & (0.001) \\ 
+  & & & \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Column, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\label{table18}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}[htbp]\centering
+  \caption{Probability of Working For Money} 
+\begin{adjustbox}{width=.8\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{threeparttable}
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Working for Money = 1} \\ 
+ & Brazil & North Region & Roraima \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+Immigrants & $-$0.000 & $-$0.000 & $-$0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Time Trend & 0.000$^{**}$ & 0.000 & $-$0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Years of Schooling & 0.000 & $-$0.000 & $-$0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Women & 0.000$^{***}$ & 0.000$^{***}$ & $-$0.000$^{***}$ \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Indigenous & 0.000$^{*}$ & 0.000 & $-$0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Parda & $-$0.000$^{***}$ & $-$0.000 & 0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+White & $-$0.000$^{***}$ & 0.000 & 0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Yellow & $-$0.000$^{**}$ & $-$0.000 & 0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+Number of Jobs & $-$0.000 & 0.000 & 0.000 \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Fixed effects & Yes & Yes & Yes \\ 
+Set of Controls & Yes & Yes & Yes \\ 
+Observations & 336,826 & 26,241 & 7,532 \\ 
+Log Likelihood & 10,994,140.000 & 878,266.700 & 244,000.400 \\ 
+Akaike Inf. Crit. & $-$21,988,130.000 & $-$1,756,421.000 & $-$487,900.900 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \textit{Notes:} In the North Region Column, the state of Amazonas is dropped given the concern with the sample selection problem. Standard errors are in parenthesis. Superscripts \sym{*}, \sym{**} and \sym{***} represent significance ate 10\%, 5\% and 1\% respectively.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\label{table19}
+\end{table}
+
+
+
+
+
+
+
+\bibliographystyle{chicago}
+\bibliography{refs}
+
+
+\end{document}
